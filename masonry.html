@@ -10,9 +10,8 @@
 		}
 		body {
 			margin: 0;
-			padding: 2rem;
-			font-family: sans-serif;
-			background: #f0f0f0;
+			padding: 15px;
+			background: #eee;
 		}
 
 		h1 {
@@ -21,9 +20,10 @@
 		}
 
 		.grid {
-			column-width: 250px;
-			column-gap: 16px;
-			max-width: 1400px;
+			column-width: 200px;
+			column-count: 6;
+			column-gap: 10px;
+			max-width: 100%;
 			margin: 0 auto;
 			opacity: 0; /* 처음엔 안 보이도록 */
 			transition: opacity 0.5s ease;
@@ -37,10 +37,9 @@
 		.card {
 			display: inline-block;
 			width: 100%;
-			margin-bottom: 16px;
+			margin-bottom: 10px;
 			background: white;
 			border-radius: 12px;
-			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 			overflow: hidden;
 			break-inside: avoid;
 			padding: 10px; 
@@ -66,7 +65,7 @@
 		.card p {
 			padding: 12px;
 			margin: 0;
-			font-size: 14px;
+			font-size: 12px;
 		}
 		</style>
 	</head>
@@ -82,14 +81,19 @@
 		<div class="card"><img src="https://picsum.photos/400/400?random=7"><p>Card 7</p></div>
 		<div class="card"><img src="https://picsum.photos/400/380?random=8"><p>Card 8</p></div>
 		<div class="card"><img src="https://picsum.photos/400/520?random=9"><p>Card 9</p></div>
+		<div class="card"><img src="https://picsum.photos/400/500?random=2"><p>Card 2</p></div>
+		<div class="card"><img src="https://picsum.photos/400/250?random=3"><p>Card 3</p></div>
+		<div class="card"><img src="https://picsum.photos/400/600?random=4"><p>Card 4</p></div>
+		<div class="card"><img src="https://picsum.photos/400/350?random=5"><p>Card 5</p></div>
+		<div class="card"><img src="https://picsum.photos/400/450?random=6"><p>Card 6</p></div>
+		<div class="card"><img src="https://picsum.photos/400/400?random=7"><p>Card 7</p></div>
+		<div class="card"><img src="https://picsum.photos/400/380?random=8"><p>Card 8</p></div>
+		<div class="card"><img src="https://picsum.photos/400/520?random=9"><p>Card 9</p></div>
 	</div>
 
 	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 	<script>
 	const grid = document.querySelector('.grid');
-
-	console.log(grid + " + " +  grid.length);
-
 	imagesLoaded(grid, function () {
 		grid.classList.add('loaded');
 	});
