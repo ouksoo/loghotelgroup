@@ -21,7 +21,7 @@
 
 		.grid {
 			column-width: auto;
-			column-count: 6;
+			column-count: 7;
 			column-gap: 10px;
 			max-width: 100%;
 			margin: 0 auto;
@@ -35,14 +35,14 @@
 		}
 
 		.card {
+			position: relative;
 			display: inline-block;
 			width: 100%;
 			margin-bottom: 7px;
 			background: white;
-			border-radius: 12px;
+			border-radius: 5px;
 			overflow: hidden;
 			break-inside: avoid;
-			padding: 10px; 
 
 			/* 애니메이션 초기 상태 */
 			opacity: 0;
@@ -63,9 +63,14 @@
 		}
 
 		.card p {
+			position: absolute;
+			left: 0; 
+			bottom: 0;
 			padding: 12px;
 			margin: 0;
 			font-size: 12px;
+			color: #fff;
+			font-weight: bold;
 		}
 		</style>
 	</head>
@@ -81,9 +86,14 @@
 		<div class="card"><img src="https://picsum.photos/400/400?random=7"><p>Card 7</p></div>
 		<div class="card"><img src="https://picsum.photos/400/380?random=8"><p>Card 8</p></div>
 		<div class="card"><img src="https://picsum.photos/400/520?random=9"><p>Card 9</p></div>
-		<div class="card"><img src="https://picsum.photos/400/400?random=10"><p>Card 7</p></div>
-		<div class="card"><img src="https://picsum.photos/400/300?random=11"><p>Card 7</p></div>
-		<div class="card"><img src="https://picsum.photos/400/288?random=12"><p>Card 7</p></div>
+		<div class="card"><img src="https://picsum.photos/400/400?random=10"><p>Card 10</p></div>
+		<div class="card"><img src="https://picsum.photos/400/300?random=11"><p>Card 11</p></div>
+		<div class="card"><img src="https://picsum.photos/400/288?random=12"><p>Card 12</p></div>
+		<div class="card"><img src="https://picsum.photos/400/188?random=13"><p>Card 13</p></div>
+		<div class="card"><img src="https://picsum.photos/400/408?random=14"><p>Card 14</p></div>
+		<div class="card"><img src="https://picsum.photos/400/228?random=15"><p>Card 15</p></div>
+		<div class="card"><img src="https://picsum.photos/400/385?random=16"><p>Card 16</p></div>
+		<div class="card"><img src="https://picsum.photos/400/420?random=17"><p>Card 17</p></div>		
 	</div>
 
 	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
