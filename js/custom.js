@@ -15,15 +15,15 @@ var LOG = {
 
 			// 마스크 크기 확대
 			const baseSize = 95.6667;
-			const maxSize = 4000;
-			const newSize = Math.min(baseSize + scrollY * 2, maxSize);
+			const maxSize = 5000;
+			const newSize = Math.min(baseSize + scrollY * 3, maxSize);
 			videoWrapper.style.webkitMaskSize = `${newSize}vw`;
 			videoWrapper.style.maskSize = `${newSize}vw`;
 
 			// 마스크 위치 이동 (Y값 20% → 55%)
 			const startScroll = 0; // 마스크 위치 변경 시작 스크롤값
 			const endScroll = 500;   // 마스크 위치 변경 완료 스크롤값
-			const startY = 20;
+			const startY = 50;
 			const endY = 53;
 
 			let newY = startY;
