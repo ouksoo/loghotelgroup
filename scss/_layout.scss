@@ -1,3 +1,7 @@
+body.sub-bgcolor {
+	background-color: #E6E6E6;
+}
+
 nav.navigation-bar {
 	position: fixed;
 	width: 100%;
@@ -297,8 +301,147 @@ section.main-section-2 {
 			}
 		}
 
+		div.drip-drop-logo {
+			position: absolute;
+			width: 175px;
+			height: 175px;
+			background: url('../img/icons/main_drip_logo.svg') 50% 50% no-repeat;
+			background-size: cover;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+		}
+		div.water-house-logo {
+			position: absolute;
+			width: 256px;
+			height: 18px;
+			background: url('../img/icons/main_thewaterhouse_logo.svg') 50% 50% no-repeat;
+			background-size: cover;
+			left: 50%;
+			top: 47%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+		}
 		&.water-house {
 			margin-top: 100px;
+		}
+	}
+}
+
+//brand section
+section.brand-section {
+	padding: 110px 25px 0 25px;
+
+	a.back-to-brand {
+		display: inline-block;
+		padding: 5px 0 5px 25px;
+		background: url('../img/icons/Back_to_Brand_arrow.svg') 0% 50% no-repeat;
+		background-size: 16px auto;
+		font-size: 12px;
+		color: #444444;
+	}
+	div.brand-logo {
+		height: 200px;
+
+		&.dripanddrop {
+			background: url('../img/icons/Our_Brend_logo1.svg') 50% 50% no-repeat;
+			background-size: 150px auto;
+		}
+		&.waterhouse {
+			background: url('../img/icons/Our_Brend_logo2.svg') 50% 50% no-repeat;
+			background-size: 260px auto;
+		}
+	}
+
+	div.brand-image {
+		text-align: center;
+		padding-bottom: 50px;
+
+		img {
+			width: 100%;
+		}
+	}
+	div.brand-info {
+		padding: 10px 0;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+
+		.info-table {
+			float: left;
+			width: 50%;
+			padding: 15px 0;
+
+			span.title {display: block; padding-bottom: 8px; font-size: 14px; color: #808080;}
+			span.info {
+				display: block; font-size: 15px; color: #54575C;
+
+				a {
+					color: #54575C;
+				}
+			}
+		}
+	}
+	div.brand-detail {
+		padding: 40px 0;
+		border-bottom: 1px solid #ccc;
+		line-height: 21px;
+
+		p.title {
+			font-size: 17px;
+			color: #000;
+			padding-bottom: 15px;
+		}
+		p.content{
+			font-size: 14px;
+			color: #000;
+		}
+	}
+	div.brand-property {
+		padding: 40px 0;
+		line-height: 21px;
+
+		p.title {
+			font-size: 17px;
+			color: #000;
+			padding-bottom: 15px;
+		}
+		ul.property-list {
+
+			li {
+				font-size: 13px;
+				padding: 2px 0 2px 13px;
+				background: url('../img/icons/icon_property_round.svg') 0% 50% no-repeat;
+				background-size: 4px auto;
+
+				&.one {
+					background-position: 0% 27%;
+				}
+				span.sub {
+					color: #54575C;
+				}
+			}
+
+		}
+	}
+	div.brand-more {
+		text-align: center;
+		padding-bottom: 50px;
+
+		img {
+			width: 100%;
+		}
+		div.see-next-wrap {
+			padding: 15px 0 0 0;
+
+			a.see-next-brand {
+				display: inline-block;
+				padding: 5px 25px 5px 0px;
+				background: url('../img/icons/See_Next_Brand_arrow.svg') 100% 50% no-repeat;
+				background-size: 16px auto;
+				font-size: 12px;
+				color: #444444;
+			}
 		}
 	}
 }
@@ -308,13 +451,15 @@ h2.h2-title {
 	padding: 50px 0 20px 0;
 }
 
-
+//footer
 footer {
+	position: relative;
+	overflow: hidden;
+
 	&.common-footer {
 		margin: 50px 0 0 0;
-		background: #000;
-		border-radius: 50px 50px 0 0;
-		padding: 80px 30px;
+		border-radius: 30px 30px 0 0;
+		padding: 70px 30px;
 
 		div.footer-logo {
 			background: url('../img/icons/footer_log_hotel_logo.svg') 0 0 no-repeat;
@@ -323,7 +468,7 @@ footer {
 			height: 30px;
 		}
 		ul {
-			margin: 50px 0;
+			margin: 40px 0;
 
 			li {
 				line-height: 45px;
@@ -346,5 +491,25 @@ footer {
 			color: #fff;
 			font-size: 13px;
 		}
+	}
+
+	.video-background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: -2;
+	}
+	.film-footer-video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: -1;
+		background: rgba(0, 0, 0, .5);
 	}
 }
