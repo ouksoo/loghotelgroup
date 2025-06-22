@@ -7,6 +7,20 @@ var LOG = {
 			smoothTouch: false,
 		});
 	},
+	navigationInitialize : function() {
+		let lastScrollpos = window.pageYOffset;
+		let menuButtonCheck = document.querySelector(".menu-btn");
+		window.onscroll = function() {
+			let currentScrollPos = window.pageYOffset;
+			if (lastScrollpos > currentScrollPos) {
+				$('.top-nav').css('top', '0');
+			} else {
+				$('.top-nav').css('top', '-75px');
+			}
+			lastScrollpos = currentScrollPos;
+			menuButtonCheck.checked = false;
+		} 
+	},
 	mainVisualInitialize : function() {
 		const videoWrapper = document.querySelector('.video-wrapper');
 
@@ -14,8 +28,8 @@ var LOG = {
 			const scrollY = window.scrollY;
 
 			// 마스크 크기 확대
-			const baseSize = 95.6667;
-			const maxSize = 5000;
+			const baseSize = 88.6667;
+			const maxSize = 4800;
 			const newSize = Math.min(baseSize + scrollY * 3, maxSize);
 			videoWrapper.style.webkitMaskSize = `${newSize}vw`;
 			videoWrapper.style.maskSize = `${newSize}vw`;
@@ -24,7 +38,7 @@ var LOG = {
 			const startScroll = 0; // 마스크 위치 변경 시작 스크롤값
 			const endScroll = 500;   // 마스크 위치 변경 완료 스크롤값
 			const startY = 50;
-			const endY = 53;
+			const endY = 52;
 
 			let newY = startY;
 			if (scrollY > startScroll) {
@@ -35,7 +49,22 @@ var LOG = {
 			videoWrapper.style.webkitMaskPosition = `48.1% ${newY}%`;
 			videoWrapper.style.maskPosition = `48.1% ${newY}%`;
 		});
-	},	
+	},
+	mainSlideSwiperBrand : function() {
+		var BrandSwipersHotel = new Swiper(".hotel-drip-drop", {
+			navigation: {
+				nextEl: ".drip-next",
+				prevEl: ".drip-prev",
+			},
+		});
+
+		var BrandSwipersHouse = new Swiper(".the-water-house", {
+			navigation: {
+				nextEl: ".water-next",
+				prevEl: ".water-prev",
+			},
+		});
+	},
 }
 
 $(document).ready(function() {
@@ -46,5 +75,9 @@ $(document).ready(function() {
 
 	LOG.pageLenisScroll();
 	LOG.mainVisualInitialize();
+	LOG.navigationInitialize();
+	LOG.mainSlideSwiperBrand();
 	requestAnimationFrame(referenceTimeMode);
 });
+
+

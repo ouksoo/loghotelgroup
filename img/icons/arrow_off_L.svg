@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="arrow_off_L" opacity="0.3">
+    <g id="arrow">
+      <rect id="사각형_7" data-name="사각형 7" width="24" height="24" rx="6" fill="#343638"/>
+    </g>
+    <path id="arrow-2" data-name="arrow" d="M2.869,6.75H12V5.25H2.869l4.2-4.2L6,0,0,6l6,6,1.069-1.05Z" transform="translate(6 6)" fill="#fff"/>
+  </g>
+</svg>

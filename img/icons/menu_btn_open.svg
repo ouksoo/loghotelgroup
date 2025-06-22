@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+  <g id="menu_open_btn" transform="translate(-298 -82)">
+    <rect id="사각형_2" data-name="사각형 2" width="43" height="43" rx="10" transform="translate(298 82)"/>
+    <path id="menu" d="M.25,17.5V15.139h25.5V17.5Zm0-7.32V7.82h25.5V10.18Zm0-7.319V.5h25.5V2.861Z" transform="translate(306.75 94.5)" fill="#fff"/>
+  </g>
+</svg>

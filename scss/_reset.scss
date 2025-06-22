@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700');
 
 * {box-sizing: border-box}
-html, body {margin:0; padding:0; font-family: 'Nanum Gothic', sans-serif; color: #333; background: #000;}
+html, body {margin:0; padding:0; font-family: 'Nanum Gothic', sans-serif;}
 
 .clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden; } .clearfix { display:inline-block; }/*  ie-mac \*/ *html .clearfix {height: 1%;} .clearfix {display: block;}/* ie-mac */
 
@@ -45,3 +45,5 @@ th {font-weight:normal;}
 /* h */
 h1, h2, h3, h4, h5, h6, h7 { margin:0; padding:0;  font-weight:normal;}
 strong, b {font-weight:normal;}
+
+.border {border: 1px solid !important;}

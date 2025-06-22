@@ -1,0 +1,43 @@
+section.main-section-2 {
+	.swiper-button-next,.swiper-button-prev {
+		position: absolute;
+		width: 26px;
+		height: 26px;
+		margin-top: 15px;
+		z-index: 10;
+		cursor: pointer;
+		display: inline-block;
+		top: 100%;
+		text-indent: -9999px;
+	}
+	a.brand-read-more {
+		position: absolute;
+		width: 50%;
+		margin-top: 15px;
+		z-index: 8;
+		cursor: pointer;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		text-align: center;
+		color: #070707;
+		text-decoration: underline;
+		font-size: 14px;
+		padding-top: 5px;
+	}
+	.swiper-button-prev {
+		left: 0;
+		background: url('../img/icons/arrow_on_L.svg') 0 0 no-repeat;
+		background-size: cover;
+	}
+	.swiper-button-next {
+		right: 0;
+		background: url('../img/icons/arrow_on_R.svg') 0 0 no-repeat;
+		background-size: cover;
+	}
+
+	.swiper-slide {
+		position: relative;
+	}
+
+}
