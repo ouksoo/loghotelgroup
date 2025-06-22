@@ -152,6 +152,10 @@ strong, b {
   border: 1px solid !important;
 }
 
+body.sub-bgcolor {
+  background-color: #E6E6E6;
+}
+
 nav.navigation-bar {
   position: fixed;
   width: 100%;
@@ -415,8 +419,137 @@ section.main-section-2 div.main-card-section1 div.card-txt-area p.inner-txt-2 {
   color: #fff;
   line-height: 21px;
 }
+section.main-section-2 div.main-card-section1 div.drip-drop-logo {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  background: url("../img/icons/main_drip_logo.svg") 50% 50% no-repeat;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+section.main-section-2 div.main-card-section1 div.water-house-logo {
+  position: absolute;
+  width: 256px;
+  height: 18px;
+  background: url("../img/icons/main_thewaterhouse_logo.svg") 50% 50% no-repeat;
+  background-size: cover;
+  left: 50%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
 section.main-section-2 div.main-card-section1.water-house {
   margin-top: 100px;
+}
+
+section.brand-section {
+  padding: 110px 25px 0 25px;
+}
+section.brand-section a.back-to-brand {
+  display: inline-block;
+  padding: 5px 0 5px 25px;
+  background: url("../img/icons/Back_to_Brand_arrow.svg") 0% 50% no-repeat;
+  background-size: 16px auto;
+  font-size: 12px;
+  color: #444444;
+}
+section.brand-section div.brand-logo {
+  height: 200px;
+}
+section.brand-section div.brand-logo.dripanddrop {
+  background: url("../img/icons/Our_Brend_logo1.svg") 50% 50% no-repeat;
+  background-size: 150px auto;
+}
+section.brand-section div.brand-logo.waterhouse {
+  background: url("../img/icons/Our_Brend_logo2.svg") 50% 50% no-repeat;
+  background-size: 260px auto;
+}
+section.brand-section div.brand-image {
+  text-align: center;
+  padding-bottom: 50px;
+}
+section.brand-section div.brand-image img {
+  width: 100%;
+}
+section.brand-section div.brand-info {
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+section.brand-section div.brand-info .info-table {
+  float: left;
+  width: 50%;
+  padding: 15px 0;
+}
+section.brand-section div.brand-info .info-table span.title {
+  display: block;
+  padding-bottom: 8px;
+  font-size: 14px;
+  color: #808080;
+}
+section.brand-section div.brand-info .info-table span.info {
+  display: block;
+  font-size: 15px;
+  color: #54575C;
+}
+section.brand-section div.brand-info .info-table span.info a {
+  color: #54575C;
+}
+section.brand-section div.brand-detail {
+  padding: 40px 0;
+  border-bottom: 1px solid #ccc;
+  line-height: 21px;
+}
+section.brand-section div.brand-detail p.title {
+  font-size: 17px;
+  color: #000;
+  padding-bottom: 15px;
+}
+section.brand-section div.brand-detail p.content {
+  font-size: 14px;
+  color: #000;
+}
+section.brand-section div.brand-property {
+  padding: 40px 0;
+  line-height: 21px;
+}
+section.brand-section div.brand-property p.title {
+  font-size: 17px;
+  color: #000;
+  padding-bottom: 15px;
+}
+section.brand-section div.brand-property ul.property-list li {
+  font-size: 13px;
+  padding: 2px 0 2px 13px;
+  background: url("../img/icons/icon_property_round.svg") 0% 50% no-repeat;
+  background-size: 4px auto;
+}
+section.brand-section div.brand-property ul.property-list li.one {
+  background-position: 0% 27%;
+}
+section.brand-section div.brand-property ul.property-list li span.sub {
+  color: #54575C;
+}
+section.brand-section div.brand-more {
+  text-align: center;
+  padding-bottom: 50px;
+}
+section.brand-section div.brand-more img {
+  width: 100%;
+}
+section.brand-section div.brand-more div.see-next-wrap {
+  padding: 15px 0 0 0;
+}
+section.brand-section div.brand-more div.see-next-wrap a.see-next-brand {
+  display: inline-block;
+  padding: 5px 25px 5px 0px;
+  background: url("../img/icons/See_Next_Brand_arrow.svg") 100% 50% no-repeat;
+  background-size: 16px auto;
+  font-size: 12px;
+  color: #444444;
 }
 
 h2.h2-title {
@@ -424,11 +557,14 @@ h2.h2-title {
   padding: 50px 0 20px 0;
 }
 
+footer {
+  position: relative;
+  overflow: hidden;
+}
 footer.common-footer {
   margin: 50px 0 0 0;
-  background: #000;
-  border-radius: 50px 50px 0 0;
-  padding: 80px 30px;
+  border-radius: 30px 30px 0 0;
+  padding: 70px 30px;
 }
 footer.common-footer div.footer-logo {
   background: url("../img/icons/footer_log_hotel_logo.svg") 0 0 no-repeat;
@@ -437,7 +573,7 @@ footer.common-footer div.footer-logo {
   height: 30px;
 }
 footer.common-footer ul {
-  margin: 50px 0;
+  margin: 40px 0;
 }
 footer.common-footer ul li {
   line-height: 45px;
@@ -457,6 +593,27 @@ footer.common-footer div.footer-privacy a {
 footer.common-footer p.copyright-footer {
   color: #fff;
   font-size: 13px;
+}
+footer .video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+footer .film-footer-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 section.main-section-2 .swiper-button-next, section.main-section-2 .swiper-button-prev {
