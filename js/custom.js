@@ -1,3 +1,16 @@
+
+//category change
+function filterByCategory(category) {
+	$('.card').each(function () {
+		const itemCat = $(this).data('category');
+		if (category === 'all' || itemCat === category) {
+			$(this).stop(true, true).fadeIn(300);
+		} else {
+			$(this).stop(true, true).fadeOut(300);
+		}
+	});
+}
+
 var LOG = {
 	pageLenisScroll : function() {
 		lenisScrollController = new Lenis({
@@ -65,6 +78,21 @@ var LOG = {
 			},
 		});
 	},
+	experienceCategorySelect : function() {
+		$('.custom-select').on('click', function () {
+			$('.custom-options').toggle();
+		});
+		$('.custom-options div').on('click', function () {
+			const category = $(this).data('category');
+			$('.custom-select').text($(this).text());
+			$('.custom-options').hide();
+
+			$('.category-filter div').removeClass('active');
+			$('.category-filter div[data-category="' + category + '"]').addClass('active');
+
+			filterByCategory(category);
+		});
+	},
 }
 
 $(document).ready(function() {
@@ -77,6 +105,7 @@ $(document).ready(function() {
 	LOG.mainVisualInitialize();
 	LOG.navigationInitialize();
 	LOG.mainSlideSwiperBrand();
+	LOG.experienceCategorySelect(); //custom select box
 	requestAnimationFrame(referenceTimeMode);
 });
 

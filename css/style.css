@@ -658,4 +658,37 @@ section.main-section-2 .swiper-button-next {
 }
 section.main-section-2 .swiper-slide {
   position: relative;
+}
+
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.custom-select-wrapper .custom-select {
+  width: 160px;
+  padding: 8px 12px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.custom-select-wrapper .custom-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-top: none;
+  background-color: #fff;
+  z-index: 100;
+}
+.custom-select-wrapper .custom-options div {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.custom-select-wrapper .custom-options div:hover {
+  background-color: #eee;
 }/*# sourceMappingURL=style.css.map */
