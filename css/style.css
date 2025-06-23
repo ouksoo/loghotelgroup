@@ -552,6 +552,10 @@ section.brand-section div.brand-more div.see-next-wrap a.see-next-brand {
   color: #444444;
 }
 
+section.experience-section {
+  padding: 110px 25px 0 25px;
+}
+
 h2.h2-title {
   font-size: 27px;
   padding: 50px 0 20px 0;
