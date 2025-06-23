@@ -45,13 +45,12 @@ section.main-section-2 {
 //experience selectbox
 .custom-select-wrapper {
 	position: relative;
-	display: inline-block;
+	display: block;
 	margin-bottom: 20px;
 
 	.custom-select {
-		width: 160px;
-		padding: 8px 12px;
-		border: 1px solid #aaa;
+		width: 100%;
+		padding: 12px 18px;
 		border-radius: 6px;
 		background-color: #fff;
 		cursor: pointer;
@@ -62,10 +61,10 @@ section.main-section-2 {
 		top: 100%;
 		left: 0;
 		width: 100%;
-		border: 1px solid #aaa;
 		border-top: none;
 		background-color: #fff;
 		z-index: 100;
+		border-radius: 0 0 6px 6px;
 	}
 	.custom-options div {
 		padding: 8px 12px;

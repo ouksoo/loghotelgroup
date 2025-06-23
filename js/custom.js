@@ -33,7 +33,12 @@ var LOG = {
 			lastScrollpos = currentScrollPos;
 			menuButtonCheck.checked = false;
 		} 
+
+		$('label.menu-icon').on('click', function (e) {
+			alert(1);
+		});
 	},
+	//use main only
 	mainVisualInitialize : function() {
 		const videoWrapper = document.querySelector('.video-wrapper');
 
@@ -64,6 +69,7 @@ var LOG = {
 		});
 	},
 	mainSlideSwiperBrand : function() {
+		//main DRIP & DROP slide object
 		var BrandSwipersHotel = new Swiper(".hotel-drip-drop", {
 			navigation: {
 				nextEl: ".drip-next",
@@ -71,6 +77,7 @@ var LOG = {
 			},
 		});
 
+		//main THE WATER HOUSE slide object
 		var BrandSwipersHouse = new Swiper(".the-water-house", {
 			navigation: {
 				nextEl: ".water-next",
@@ -79,7 +86,9 @@ var LOG = {
 		});
 	},
 	experienceCategorySelect : function() {
-		$('.custom-select').on('click', function () {
+		$('.custom-select').on('click', function (e) {
+			e.preventDefault();
+			$(this).toggleClass('active');
 			$('.custom-options').toggle();
 		});
 		$('.custom-options div').on('click', function () {
@@ -91,6 +100,14 @@ var LOG = {
 			$('.category-filter div[data-category="' + category + '"]').addClass('active');
 
 			filterByCategory(category);
+		});
+
+		//card detail click
+		$('a.show-detail').on('click', function (e) {
+			e.preventDefault();
+			$(this).toggleClass('active');
+
+			$(this).next('.image').find('.info-detail').toggleClass('show');
 		});
 	},
 }
@@ -107,6 +124,12 @@ $(document).ready(function() {
 	LOG.mainSlideSwiperBrand();
 	LOG.experienceCategorySelect(); //custom select box
 	requestAnimationFrame(referenceTimeMode);
+
+	$(document).on('click', function (e) {
+		if (!$(e.target).closest('.custom-select-wrapper').length) {
+			$('.custom-options').hide();
+		}
+	});
 });
 
 
