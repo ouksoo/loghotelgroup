@@ -35,7 +35,13 @@ var LOG = {
 		} 
 
 		$('label.menu-icon').on('click', function (e) {
-			alert(1);
+			$('.nav-films').toggleClass('active');
+			if($('div.nav-films').hasClass('active')) {
+				$('.nav-films').fadeIn();
+			}
+			else {
+				$('.nav-films').fadeOut();
+			}
 		});
 	},
 	//use main only
@@ -110,6 +116,31 @@ var LOG = {
 			$(this).next('.image').find('.info-detail').toggleClass('show');
 		});
 	},
+	globalLinkStart : function() {
+		var url = "http://127.0.0.1:5500/";    
+
+		$('.link-logo').on('click', function() {
+			$(location).attr('href',url + "index.html");
+		});
+		$('.link-our-brand').on('click', function() {
+			$(location).attr('href',url + "dripanddrop.html");
+		});
+		$('.link-our-experience').on('click', function() {
+			$(location).attr('href',url + "experience.html");
+		});
+		$('.link-company').on('click', function() {
+			$(location).attr('href',url + "company.html");
+		});
+		$('.link-contact').on('click', function() {
+			$(location).attr('href',url + "contact.html");
+		});
+		$('.link-privacy').on('click', function() {
+			
+		});
+		$('.link-terms').on('click', function() {
+			
+		});
+	},
 }
 
 $(document).ready(function() {
@@ -123,6 +154,7 @@ $(document).ready(function() {
 	LOG.navigationInitialize();
 	LOG.mainSlideSwiperBrand();
 	LOG.experienceCategorySelect(); //custom select box
+	LOG.globalLinkStart();
 	requestAnimationFrame(referenceTimeMode);
 
 	$(document).on('click', function (e) {

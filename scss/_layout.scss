@@ -52,6 +52,11 @@ nav.navigation-bar {
 		background: rgba(0, 0, 0, .8);
 		z-index: 9;
 
+		/*
+		&.active {
+			display: block;
+		}
+			*/
 		ul.gnbmenus {
 			line-height: 45px;
 			margin-top: 50%;
@@ -448,21 +453,34 @@ section.brand-section {
 
 //experience section
 section.experience-section {
-	padding: 130px 25px 0 25px;
+	padding: 145px 25px 0 25px;
+
+	p.experience-title {
+		font-size: 36px; 
+		line-height: 38px;
+	}
 
 	div.experience-list {
 		
 		div.inner {
 			position: relative;
+			padding: 0 0 50px 0;
 
 			a.show-detail {
 				position: absolute;
-				width: 30px;
-				height: 30px;
+				width: 34px;
+				height: 34px;
 				right: 20px;
 				top: 20px;
 				background: #fff;
 				z-index: 5;
+				background: url('../img/icons/sub_open_btn.svg') 0 0 no-repeat;
+				background-size: 100% auto;
+
+				&.active {
+					background: url('../img/icons/sub_close_btn.svg') 0 0 no-repeat;
+					background-size: 100% auto;
+				}
 			}
 			div.image {
 				position: relative;
@@ -481,24 +499,76 @@ section.experience-section {
 					&.show {
 						opacity: 1;
 					}
+
+					table {
+						position: absolute;
+						width: 80%;
+						left: 50%;
+						bottom: 7%;
+						color: #fff; 
+						font-size: 12px;
+						text-align: left;
+						transform: translate(-50%, 0%);
+
+						th {
+							padding: 5px 0;
+							width: 22%;
+						}
+						td {
+							padding: 5px 0;
+							width: 78%;
+						}
+					}
 				}
 				img {
 					width: 100%;
 				}
 			}
 			div.category-wrap {
-
+				
+				p {
+					font-size: 18px;
+					padding: 15px 0;
+				}
 				span.categorys {
 					display: inline-block;
 					background: #fff;
 					margin-right: 5px;
-					padding: 3px 5px;
-					font-size: 12px;
+					padding: 8px 10px;
+					font-size: 13px;
+					border-radius: 6px;
 				}
 			}
 		}
 	}
 }
+
+//experience section
+section.etc-section {
+	padding: 145px 25px 0 25px;
+
+	p.etc-title {
+		font-size: 27px; 
+		padding-bottom: 50px;
+	}
+	p.etc-text {
+		font-size: 14px; 
+		line-height: 23px;
+	}
+	div.infos {
+		font-size: 14px;
+		margin-top: 30px;
+
+		p.up {
+			color: #54575C;
+			padding-bottom: 10px;
+		}
+		p.down {
+
+		}
+	}
+}
+
 
 h2.h2-title {
 	font-size: 27px;

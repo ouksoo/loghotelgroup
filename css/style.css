@@ -121,8 +121,6 @@ table {
 td {
   margin: 0px;
   padding: 0px;
-  font-size: 100%;
-  color: #777777;
 }
 
 .notable {
@@ -201,6 +199,11 @@ nav.navigation-bar a.menu-click-icon {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   z-index: 9;
+  /*
+  &.active {
+  	display: block;
+  }
+  	*/
 }
 .top-nav div.nav-films ul.gnbmenus {
   line-height: 45px;
@@ -553,19 +556,30 @@ section.brand-section div.brand-more div.see-next-wrap a.see-next-brand {
 }
 
 section.experience-section {
-  padding: 130px 25px 0 25px;
+  padding: 145px 25px 0 25px;
+}
+section.experience-section p.experience-title {
+  font-size: 36px;
+  line-height: 38px;
 }
 section.experience-section div.experience-list div.inner {
   position: relative;
+  padding: 0 0 50px 0;
 }
 section.experience-section div.experience-list div.inner a.show-detail {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   right: 20px;
   top: 20px;
   background: #fff;
   z-index: 5;
+  background: url("../img/icons/sub_open_btn.svg") 0 0 no-repeat;
+  background-size: 100% auto;
+}
+section.experience-section div.experience-list div.inner a.show-detail.active {
+  background: url("../img/icons/sub_close_btn.svg") 0 0 no-repeat;
+  background-size: 100% auto;
 }
 section.experience-section div.experience-list div.inner div.image {
   position: relative;
@@ -584,17 +598,59 @@ section.experience-section div.experience-list div.inner div.image div.info-deta
 section.experience-section div.experience-list div.inner div.image div.info-detail.show {
   opacity: 1;
 }
+section.experience-section div.experience-list div.inner div.image div.info-detail table {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  bottom: 7%;
+  color: #fff;
+  font-size: 12px;
+  text-align: left;
+  transform: translate(-50%, 0%);
+}
+section.experience-section div.experience-list div.inner div.image div.info-detail table th {
+  padding: 5px 0;
+  width: 22%;
+}
+section.experience-section div.experience-list div.inner div.image div.info-detail table td {
+  padding: 5px 0;
+  width: 78%;
+}
 section.experience-section div.experience-list div.inner div.image img {
   width: 100%;
+}
+section.experience-section div.experience-list div.inner div.category-wrap p {
+  font-size: 18px;
+  padding: 15px 0;
 }
 section.experience-section div.experience-list div.inner div.category-wrap span.categorys {
   display: inline-block;
   background: #fff;
   margin-right: 5px;
-  padding: 3px 5px;
-  font-size: 12px;
+  padding: 8px 10px;
+  font-size: 13px;
+  border-radius: 6px;
 }
 
+section.etc-section {
+  padding: 145px 25px 0 25px;
+}
+section.etc-section p.etc-title {
+  font-size: 27px;
+  padding-bottom: 50px;
+}
+section.etc-section p.etc-text {
+  font-size: 14px;
+  line-height: 23px;
+}
+section.etc-section div.infos {
+  font-size: 14px;
+  margin-top: 30px;
+}
+section.etc-section div.infos p.up {
+  color: #54575C;
+  padding-bottom: 10px;
+}
 h2.h2-title {
   font-size: 27px;
   padding: 50px 0 20px 0;
@@ -702,14 +758,19 @@ section.main-section-2 .swiper-slide {
 .custom-select-wrapper {
   position: relative;
   display: block;
-  margin-bottom: 20px;
+  margin: 10px 0 50px 0;
 }
 .custom-select-wrapper .custom-select {
   width: 100%;
-  padding: 12px 18px;
+  padding: 16px 18px;
   border-radius: 6px;
-  background-color: #fff;
   cursor: pointer;
+  background: #fff url("../img/icons/btn_drop_off.svg") 95% 50% no-repeat;
+  background-size: 10px auto;
+}
+.custom-select-wrapper .custom-select.active {
+  background: #fff url("../img/icons/btn_drop_on.svg") 95% 50% no-repeat;
+  background-size: 10px auto;
 }
 .custom-select-wrapper .custom-options {
   display: none;
@@ -721,9 +782,11 @@ section.main-section-2 .swiper-slide {
   background-color: #fff;
   z-index: 100;
   border-radius: 0 0 6px 6px;
+  margin-top: -3px;
+  padding: 0 0 20px 0;
 }
 .custom-select-wrapper .custom-options div {
-  padding: 8px 12px;
+  padding: 12px 18px;
   cursor: pointer;
   transition: background 0.2s;
 }

@@ -10,7 +10,7 @@
 <body class="sub-bgcolor">
 
 <nav class="top-nav" style="top: 0px;">
-	<h1 class="logo"></h1>
+	<h1 class="logo link-logo"></h1>
 	<input class="menu-btn" type="checkbox" id="menu-btn" />
 	<label class="menu-icon" for="menu-btn">
 		<span class="navicon"></span>
@@ -18,20 +18,22 @@
 	
 	<div class="nav-films">
 		<ul class="gnbmenus">
-			<li><a href="#">Our Brand</a></li>
-			<li><a href="#">Out Experience</a></li>
-			<li><a href="#">Company</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#" class="link-our-brand">Our Brand</a></li>
+			<li><a href="#" class="link-our-experience">Our Experience</a></li>
+			<li><a href="#" class="link-company">Company</a></li>
+			<li><a href="#" class="link-contact">Contact</a></li>
 		</ul>
 	</div>
+
+	<a href="#" class="link-lang"></a>
 </nav>
 
 <section class="experience-section">
 
-	<p>
+	<p class="experience-title">
 		A refined hospitality<br />
 		platform,<br />
-		thoughtfully
+		thoughtfully<br />
 		designed for<br />
 		diverse lifestyles.
 	</p>
@@ -41,20 +43,69 @@
 		<div class="custom-select">Show All</div>
 		<div class="custom-options">
 			<div data-category="all">Show All</div>
-			<div data-category="fruit">HOTEL-1</div>
-			<div data-category="animal">HOTEL-2</div>
-			<div data-category="vehicle">HOTEL-3</div>
+			<div data-category="fruit">Project Management</div>
+			<div data-category="animal">Property Management</div>
+			<div data-category="vehicle">Branding</div>
+			<div data-category="vehicle">Hotel Operation</div>
+			<div data-category="vehicle">Hotel Development</div>
+			<div data-category="vehicle">Hotel</div>
+			<div data-category="vehicle">F&B</div>
 		</div>
 	</div>
 
 	<!-- 리스트 -->
 	<div class="experience-list" id="thumbnail-list">
-		<!-- loop -->
+		<!--BlueCove Square-->
 		<div class="inner" data-category="fruit">
 			<a href="#" class="show-detail"></a>
 			<div class="image">
 				<div class="info-detail">
-
+					<table class="notable">
+						<tr>
+							<th>소재지</th>
+							<td>서울시 종로구 경희궁길 27</td>
+						</tr>
+						<tr>
+							<th>지역지구</th>
+							<td>제2종일반주거지역, 역사문화환경보전지역</td>
+						</tr>
+						<tr>
+							<th>주용도</th>
+							<td>업무시설</td>
+						</tr>
+						<tr>
+							<th>구조</th>
+							<td>철근콘크리트구조</td>
+						</tr>
+						<tr>
+							<th>건축면적</th>
+							<td>558.52m² (168.95평)</td>
+						</tr>
+						<tr>
+							<th>연면적</th>
+							<td>2,867.21m² (867.33평)</td>
+						</tr>
+						<tr>
+							<th>층수</th>
+							<td>지하 1층, 지상 5층(1개층 증축)</td>
+						</tr>
+						<tr>
+							<th>건폐율</th>
+							<td>58.50%</td>
+						</tr>
+						<tr>
+							<th>용적율</th>
+							<td>199.88%</td>
+						</tr>
+						<tr>
+							<th>주차대수</th>
+							<td>26대</td>
+						</tr>
+						<tr>
+							<th>준공년도</th>
+							<td>1999년</td>
+						</tr>
+					</table>
 				</div>
 				<img src="img/photo/sample-1.png" alt="" />
 			</div>
@@ -63,22 +114,433 @@
 				<span class="categorys">Project management</span><span class="categorys">Property management</span>
 			</div>
 		</div>
-		<!-- //loop -->
-
+		<!--GRAND JOSUN  Busan-->
+		<div class="inner" data-category="fruit">
+			<a href="#" class="show-detail"></a>
+			<div class="image">
+				<div class="info-detail">
+					<table class="notable">
+						<tr>
+							<th>소재지</th>
+							<td>서울시 종로구 경희궁길 27</td>
+						</tr>
+						<tr>
+							<th>지역지구</th>
+							<td>제2종일반주거지역, 역사문화환경보전지역</td>
+						</tr>
+						<tr>
+							<th>주용도</th>
+							<td>업무시설</td>
+						</tr>
+						<tr>
+							<th>구조</th>
+							<td>철근콘크리트구조</td>
+						</tr>
+						<tr>
+							<th>건축면적</th>
+							<td>558.52m² (168.95평)</td>
+						</tr>
+						<tr>
+							<th>연면적</th>
+							<td>2,867.21m² (867.33평)</td>
+						</tr>
+						<tr>
+							<th>층수</th>
+							<td>지하 1층, 지상 5층(1개층 증축)</td>
+						</tr>
+						<tr>
+							<th>건폐율</th>
+							<td>58.50%</td>
+						</tr>
+						<tr>
+							<th>용적율</th>
+							<td>199.88%</td>
+						</tr>
+						<tr>
+							<th>주차대수</th>
+							<td>26대</td>
+						</tr>
+						<tr>
+							<th>준공년도</th>
+							<td>1999년</td>
+						</tr>
+					</table>
+				</div>
+				<img src="img/photo/sample-1.png" alt="" />
+			</div>
+			<div class="category-wrap">
+				<p>BlueCove Square</p>
+				<span class="categorys">Project management</span><span class="categorys">Property management</span>
+			</div>
+		</div>
+		<!--GRAND HYATT  Seoul-->
+		<div class="inner" data-category="fruit">
+			<a href="#" class="show-detail"></a>
+			<div class="image">
+				<div class="info-detail">
+					<table class="notable">
+						<tr>
+							<th>소재지</th>
+							<td>서울시 종로구 경희궁길 27</td>
+						</tr>
+						<tr>
+							<th>지역지구</th>
+							<td>제2종일반주거지역, 역사문화환경보전지역</td>
+						</tr>
+						<tr>
+							<th>주용도</th>
+							<td>업무시설</td>
+						</tr>
+						<tr>
+							<th>구조</th>
+							<td>철근콘크리트구조</td>
+						</tr>
+						<tr>
+							<th>건축면적</th>
+							<td>558.52m² (168.95평)</td>
+						</tr>
+						<tr>
+							<th>연면적</th>
+							<td>2,867.21m² (867.33평)</td>
+						</tr>
+						<tr>
+							<th>층수</th>
+							<td>지하 1층, 지상 5층(1개층 증축)</td>
+						</tr>
+						<tr>
+							<th>건폐율</th>
+							<td>58.50%</td>
+						</tr>
+						<tr>
+							<th>용적율</th>
+							<td>199.88%</td>
+						</tr>
+						<tr>
+							<th>주차대수</th>
+							<td>26대</td>
+						</tr>
+						<tr>
+							<th>준공년도</th>
+							<td>1999년</td>
+						</tr>
+					</table>
+				</div>
+				<img src="img/photo/sample-1.png" alt="" />
+			</div>
+			<div class="category-wrap">
+				<p>BlueCove Square</p>
+				<span class="categorys">Project management</span><span class="categorys">Property management</span>
+			</div>
+		</div>
+		<!--PARNAS HOTEL  JEJU-->
+		<div class="inner" data-category="fruit">
+			<a href="#" class="show-detail"></a>
+			<div class="image">
+				<div class="info-detail">
+					<table class="notable">
+						<tr>
+							<th>소재지</th>
+							<td>서울시 종로구 경희궁길 27</td>
+						</tr>
+						<tr>
+							<th>지역지구</th>
+							<td>제2종일반주거지역, 역사문화환경보전지역</td>
+						</tr>
+						<tr>
+							<th>주용도</th>
+							<td>업무시설</td>
+						</tr>
+						<tr>
+							<th>구조</th>
+							<td>철근콘크리트구조</td>
+						</tr>
+						<tr>
+							<th>건축면적</th>
+							<td>558.52m² (168.95평)</td>
+						</tr>
+						<tr>
+							<th>연면적</th>
+							<td>2,867.21m² (867.33평)</td>
+						</tr>
+						<tr>
+							<th>층수</th>
+							<td>지하 1층, 지상 5층(1개층 증축)</td>
+						</tr>
+						<tr>
+							<th>건폐율</th>
+							<td>58.50%</td>
+						</tr>
+						<tr>
+							<th>용적율</th>
+							<td>199.88%</td>
+						</tr>
+						<tr>
+							<th>주차대수</th>
+							<td>26대</td>
+						</tr>
+						<tr>
+							<th>준공년도</th>
+							<td>1999년</td>
+						</tr>
+					</table>
+				</div>
+				<img src="img/photo/sample-1.png" alt="" />
+			</div>
+			<div class="category-wrap">
+				<p>BlueCove Square</p>
+				<span class="categorys">Project management</span><span class="categorys">Property management</span>
+			</div>
+		</div>
+		<!--Yeosu Hotel Development Project-->
+		<div class="inner" data-category="fruit">
+			<a href="#" class="show-detail"></a>
+			<div class="image">
+				<div class="info-detail">
+					<table class="notable">
+						<tr>
+							<th>소재지</th>
+							<td>서울시 종로구 경희궁길 27</td>
+						</tr>
+						<tr>
+							<th>지역지구</th>
+							<td>제2종일반주거지역, 역사문화환경보전지역</td>
+						</tr>
+						<tr>
+							<th>주용도</th>
+							<td>업무시설</td>
+						</tr>
+						<tr>
+							<th>구조</th>
+							<td>철근콘크리트구조</td>
+						</tr>
+						<tr>
+							<th>건축면적</th>
+							<td>558.52m² (168.95평)</td>
+						</tr>
+						<tr>
+							<th>연면적</th>
+							<td>2,867.21m² (867.33평)</td>
+						</tr>
+						<tr>
+							<th>층수</th>
+							<td>지하 1층, 지상 5층(1개층 증축)</td>
+						</tr>
+						<tr>
+							<th>건폐율</th>
+							<td>58.50%</td>
+						</tr>
+						<tr>
+							<th>용적율</th>
+							<td>199.88%</td>
+						</tr>
+						<tr>
+							<th>주차대수</th>
+							<td>26대</td>
+						</tr>
+						<tr>
+							<th>준공년도</th>
+							<td>1999년</td>
+						</tr>
+					</table>
+				</div>
+				<img src="img/photo/sample-1.png" alt="" />
+			</div>
+			<div class="category-wrap">
+				<p>BlueCove Square</p>
+				<span class="categorys">Project management</span><span class="categorys">Property management</span>
+			</div>
+		</div>
+		<!-- Yeosu Hotel Development Project-->
+		<div class="inner" data-category="fruit">
+			<a href="#" class="show-detail"></a>
+			<div class="image">
+				<div class="info-detail">
+					<table class="notable">
+						<tr>
+							<th>소재지</th>
+							<td>서울시 종로구 경희궁길 27</td>
+						</tr>
+						<tr>
+							<th>지역지구</th>
+							<td>제2종일반주거지역, 역사문화환경보전지역</td>
+						</tr>
+						<tr>
+							<th>주용도</th>
+							<td>업무시설</td>
+						</tr>
+						<tr>
+							<th>구조</th>
+							<td>철근콘크리트구조</td>
+						</tr>
+						<tr>
+							<th>건축면적</th>
+							<td>558.52m² (168.95평)</td>
+						</tr>
+						<tr>
+							<th>연면적</th>
+							<td>2,867.21m² (867.33평)</td>
+						</tr>
+						<tr>
+							<th>층수</th>
+							<td>지하 1층, 지상 5층(1개층 증축)</td>
+						</tr>
+						<tr>
+							<th>건폐율</th>
+							<td>58.50%</td>
+						</tr>
+						<tr>
+							<th>용적율</th>
+							<td>199.88%</td>
+						</tr>
+						<tr>
+							<th>주차대수</th>
+							<td>26대</td>
+						</tr>
+						<tr>
+							<th>준공년도</th>
+							<td>1999년</td>
+						</tr>
+					</table>
+				</div>
+				<img src="img/photo/sample-1.png" alt="" />
+			</div>
+			<div class="category-wrap">
+				<p>BlueCove Square</p>
+				<span class="categorys">Project management</span><span class="categorys">Property management</span>
+			</div>
+		</div>
+		<!--HOTEL DRIP&DROP  Project-->
+		<div class="inner" data-category="fruit">
+			<a href="#" class="show-detail"></a>
+			<div class="image">
+				<div class="info-detail">
+					<table class="notable">
+						<tr>
+							<th>소재지</th>
+							<td>서울시 종로구 경희궁길 27</td>
+						</tr>
+						<tr>
+							<th>지역지구</th>
+							<td>제2종일반주거지역, 역사문화환경보전지역</td>
+						</tr>
+						<tr>
+							<th>주용도</th>
+							<td>업무시설</td>
+						</tr>
+						<tr>
+							<th>구조</th>
+							<td>철근콘크리트구조</td>
+						</tr>
+						<tr>
+							<th>건축면적</th>
+							<td>558.52m² (168.95평)</td>
+						</tr>
+						<tr>
+							<th>연면적</th>
+							<td>2,867.21m² (867.33평)</td>
+						</tr>
+						<tr>
+							<th>층수</th>
+							<td>지하 1층, 지상 5층(1개층 증축)</td>
+						</tr>
+						<tr>
+							<th>건폐율</th>
+							<td>58.50%</td>
+						</tr>
+						<tr>
+							<th>용적율</th>
+							<td>199.88%</td>
+						</tr>
+						<tr>
+							<th>주차대수</th>
+							<td>26대</td>
+						</tr>
+						<tr>
+							<th>준공년도</th>
+							<td>1999년</td>
+						</tr>
+					</table>
+				</div>
+				<img src="img/photo/sample-1.png" alt="" />
+			</div>
+			<div class="category-wrap">
+				<p>BlueCove Square</p>
+				<span class="categorys">Project management</span><span class="categorys">Property management</span>
+			</div>
+		</div>
+		<!--THE WATERHOUSE  Project-->
+		<div class="inner" data-category="fruit">
+			<a href="#" class="show-detail"></a>
+			<div class="image">
+				<div class="info-detail">
+					<table class="notable">
+						<tr>
+							<th>소재지</th>
+							<td>서울시 종로구 경희궁길 27</td>
+						</tr>
+						<tr>
+							<th>지역지구</th>
+							<td>제2종일반주거지역, 역사문화환경보전지역</td>
+						</tr>
+						<tr>
+							<th>주용도</th>
+							<td>업무시설</td>
+						</tr>
+						<tr>
+							<th>구조</th>
+							<td>철근콘크리트구조</td>
+						</tr>
+						<tr>
+							<th>건축면적</th>
+							<td>558.52m² (168.95평)</td>
+						</tr>
+						<tr>
+							<th>연면적</th>
+							<td>2,867.21m² (867.33평)</td>
+						</tr>
+						<tr>
+							<th>층수</th>
+							<td>지하 1층, 지상 5층(1개층 증축)</td>
+						</tr>
+						<tr>
+							<th>건폐율</th>
+							<td>58.50%</td>
+						</tr>
+						<tr>
+							<th>용적율</th>
+							<td>199.88%</td>
+						</tr>
+						<tr>
+							<th>주차대수</th>
+							<td>26대</td>
+						</tr>
+						<tr>
+							<th>준공년도</th>
+							<td>1999년</td>
+						</tr>
+					</table>
+				</div>
+				<img src="img/photo/sample-1.png" alt="" />
+			</div>
+			<div class="category-wrap">
+				<p>BlueCove Square</p>
+				<span class="categorys">Project management</span><span class="categorys">Property management</span>
+			</div>
+		</div>
 	</div>
 
 </section>
 
 <footer class="common-footer">
-	<div class="footer-logo"></div>
+	<div class="footer-logo link-logo"></div>
 	<ul>
-		<li><a href="#">Our Brand</a></li>
-		<li><a href="#">Our Experience</a></li>
-		<li><a href="#">Company</a></li>
-		<li><a href="#">Contact</a></li>
+		<li><a href="#" class="link-our-brand">Our Brand</a></li>
+		<li><a href="#" class="link-our-experience">Our Experience</a></li>
+		<li><a href="#" class="link-company">Company</a></li>
+		<li><a href="#" class="link-contact">Contact</a></li>
 	</ul>
 	<div class="footer-privacy">
-		<a href="">Privacy Policy</a> | <a href="">Terms and Conditions</a>
+		<a href="#" class="link-privacy">Privacy Policy</a> | <a href="#" class="link-terms">Terms and Conditions</a>
 	</div>
 	<p class="copyright-footer">Copyright 2026 - LOG HOTEL GROUP</p>
 
