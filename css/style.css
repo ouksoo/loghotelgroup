@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ***************  global *************** */
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700");
 * {
@@ -618,6 +619,9 @@ section.experience-section div.experience-list div.inner div.image div.info-deta
 }
 section.experience-section div.experience-list div.inner div.image img {
   width: 100%;
+  aspect-ratio: 100/125; /* 너비:높이 비율 = 100:110 */
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section.experience-section div.experience-list div.inner div.category-wrap p {
   font-size: 18px;

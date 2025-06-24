@@ -522,6 +522,8 @@ section.experience-section {
 				}
 				img {
 					width: 100%;
+					aspect-ratio: 100 / 125; /* 너비:높이 비율 = 100:110 */
+					object-fit: cover;
 				}
 			}
 			div.category-wrap {

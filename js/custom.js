@@ -1,7 +1,7 @@
 
 //category change
 function filterByCategory(category) {
-	$('.card').each(function () {
+	$('.experience-list .inner').each(function () {
 		const itemCat = $(this).data('category');
 		if (category === 'all' || itemCat === category) {
 			$(this).stop(true, true).fadeIn(300);
@@ -9,6 +9,12 @@ function filterByCategory(category) {
 			$(this).stop(true, true).fadeOut(300);
 		}
 	});
+}
+
+//link test
+function navigate(event, actualUrl) {
+	event.preventDefault();
+	window.location.href = actualUrl;
 }
 
 var LOG = {
@@ -112,7 +118,6 @@ var LOG = {
 		$('a.show-detail').on('click', function (e) {
 			e.preventDefault();
 			$(this).toggleClass('active');
-
 			$(this).next('.image').find('.info-detail').toggleClass('show');
 		});
 	},
@@ -150,7 +155,6 @@ $(document).ready(function() {
 	}
 
 	LOG.pageLenisScroll();
-	LOG.mainVisualInitialize();
 	LOG.navigationInitialize();
 	LOG.mainSlideSwiperBrand();
 	LOG.experienceCategorySelect(); //custom select box
@@ -160,6 +164,7 @@ $(document).ready(function() {
 	$(document).on('click', function (e) {
 		if (!$(e.target).closest('.custom-select-wrapper').length) {
 			$('.custom-options').hide();
+			$('.custom-select').removeClass('active');
 		}
 	});
 });
