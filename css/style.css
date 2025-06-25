@@ -1,6 +1,41 @@
 @charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css");
 /* ***************  global *************** */
-@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700");
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Thin.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "tt-norms";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../img/font/TT_Norms_Pro_Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "CrimsonPro-Regular";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../img/font/CrimsonPro-Regular.woff2") format("woff2");
+}
 * {
   box-sizing: border-box;
 }
@@ -8,7 +43,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Apple SD Gothic Neo", sans-serif;
 }
 
 .clearfix:after {
@@ -349,6 +384,7 @@ section.main-header div.video-intro div.bottom ul a {
   transition: color 0.2s cubic-bezier(0.33, 1, 0.68, 1) 0.3s;
 }
 section.main-header div.video-intro div.bottom p.txt-main-bottom {
+  font-family: "tt-norms";
   font-size: 27px;
   color: #fff;
 }
@@ -370,6 +406,7 @@ section.main-section-1 {
   padding: 100px 25px;
 }
 section.main-section-1 p.txt-main-1 {
+  font-family: "tt-norms";
   font-size: 17px;
 }
 section.main-section-1 p.txt-main-2 {
@@ -378,6 +415,7 @@ section.main-section-1 p.txt-main-2 {
   padding: 20px 0 10px 0;
 }
 section.main-section-1 a.experience-link {
+  font-family: "tt-norms";
   font-size: 13px;
   color: #000;
   background: url("../img/icons/main_arrow_go.svg") 100% 50% no-repeat;
@@ -457,6 +495,7 @@ section.brand-section a.back-to-brand {
   padding: 5px 0 5px 25px;
   background: url("../img/icons/Back_to_Brand_arrow.svg") 0% 50% no-repeat;
   background-size: 16px auto;
+  font-family: "tt-norms";
   font-size: 12px;
   color: #444444;
 }
@@ -479,6 +518,7 @@ section.brand-section div.brand-image img {
   width: 100%;
 }
 section.brand-section div.brand-info {
+  font-family: "tt-norms";
   padding: 10px 0;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -508,6 +548,7 @@ section.brand-section div.brand-detail {
   line-height: 21px;
 }
 section.brand-section div.brand-detail p.title {
+  font-family: "tt-norms";
   font-size: 17px;
   color: #000;
   padding-bottom: 15px;
@@ -545,6 +586,7 @@ section.brand-section div.brand-more img {
   width: 100%;
 }
 section.brand-section div.brand-more div.see-next-wrap {
+  font-family: "tt-norms";
   padding: 15px 0 0 0;
 }
 section.brand-section div.brand-more div.see-next-wrap a.see-next-brand {
@@ -560,6 +602,7 @@ section.experience-section {
   padding: 145px 25px 0 25px;
 }
 section.experience-section p.experience-title {
+  font-family: "CrimsonPro-Regular";
   font-size: 36px;
   line-height: 38px;
 }
@@ -624,6 +667,7 @@ section.experience-section div.experience-list div.inner div.image img {
      object-fit: cover;
 }
 section.experience-section div.experience-list div.inner div.category-wrap p {
+  font-family: "tt-norms";
   font-size: 18px;
   padding: 15px 0;
 }
@@ -632,6 +676,7 @@ section.experience-section div.experience-list div.inner div.category-wrap span.
   background: #fff;
   margin-right: 5px;
   padding: 8px 10px;
+  font-family: "tt-norms";
   font-size: 13px;
   border-radius: 6px;
 }
@@ -640,6 +685,7 @@ section.etc-section {
   padding: 145px 25px 0 25px;
 }
 section.etc-section p.etc-title {
+  font-family: "tt-norms";
   font-size: 27px;
   padding-bottom: 50px;
 }
@@ -656,6 +702,7 @@ section.etc-section div.infos p.up {
   padding-bottom: 10px;
 }
 h2.h2-title {
+  font-family: "tt-norms";
   font-size: 27px;
   padding: 50px 0 20px 0;
 }
@@ -663,6 +710,7 @@ h2.h2-title {
 footer {
   position: relative;
   overflow: hidden;
+  font-family: "tt-norms";
 }
 footer.common-footer {
   margin: 50px 0 0 0;
@@ -742,6 +790,7 @@ section.main-section-2 a.brand-read-more {
   text-align: center;
   color: #070707;
   text-decoration: underline;
+  font-family: "tt-norms";
   font-size: 14px;
   padding-top: 5px;
 }
@@ -763,6 +812,8 @@ section.main-section-2 .swiper-slide {
   position: relative;
   display: block;
   margin: 10px 0 50px 0;
+  font-family: "tt-norms";
+  font-size: 16px;
 }
 .custom-select-wrapper .custom-select {
   width: 100%;

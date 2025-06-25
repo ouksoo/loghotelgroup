@@ -22,6 +22,7 @@ section.main-section-2 {
 		text-align: center;
 		color: #070707;
 		text-decoration: underline;
+		font-family: 'tt-norms';
 		font-size: 14px;
 		padding-top: 5px;
 	}
@@ -47,6 +48,8 @@ section.main-section-2 {
 	position: relative;
 	display: block;
 	margin: 10px 0 50px 0;
+	font-family: 'tt-norms';
+	font-size: 16px;
 
 	.custom-select {
 		width: 100%;

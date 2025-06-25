@@ -1,10 +1,49 @@
 @charset "utf-8";
 /* ***************  global *************** */
-// Montserrat 400, 600
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700');
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Thin.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Light.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Bold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'tt-norms';
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url('../img/font/TT_Norms_Pro_Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'CrimsonPro-Regular';
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url('../img/font/CrimsonPro-Regular.woff2') format('woff2');
+}
+
 
 * {box-sizing: border-box}
-html, body {margin:0; padding:0; font-family: 'Nanum Gothic', sans-serif;}
+html, body {margin:0; padding:0; font-family: 'Apple SD Gothic Neo', sans-serif;}
 
 .clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden; } .clearfix { display:inline-block; }/*  ie-mac \*/ *html .clearfix {height: 1%;} .clearfix {display: block;}/* ie-mac */
 
