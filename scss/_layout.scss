@@ -35,11 +35,12 @@ nav.navigation-bar {
 	h1.logo {
 		position: absolute;
 		left: 25px;
-		top: 25px;
+		top: 30px;
 		background: url('../img/icons/GNB_log_hotel_logo.svg') 0 0 no-repeat;
 		background-size: 100% auto;
 		width: 118px;
 		height: 40px;
+		z-index: 10;
 	}
 
 	div.nav-films {
@@ -49,7 +50,7 @@ nav.navigation-bar {
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background: rgba(0, 0, 0, .8);
+		background: #848270;
 		z-index: 9;
 
 		/*
@@ -58,9 +59,9 @@ nav.navigation-bar {
 		}
 			*/
 		ul.gnbmenus {
-			line-height: 45px;
+			line-height: 48px;
 			margin-top: 50%;
-			margin-left: 25px;
+			margin-left: 35px;
 
 			li a {
 				display: inline-block;
@@ -85,7 +86,7 @@ nav.navigation-bar {
 		right: 25px;;
 		cursor: pointer;
 		display: inline-block;
-		padding: 22px 11px;
+		padding: 22px 10px;
 		z-index: 10;
 		background: #000;
 		border-radius: 10px;
@@ -140,6 +141,20 @@ nav.navigation-bar {
 			&:before, &:after{
 				top: 0;
 			}
+		}
+	}
+
+	a.link-lang {
+		position: absolute;
+		left: 50%;
+		bottom: 10%;
+		transform: translate(-50%, 0%);
+		width: 70px;
+		height: 20px;
+		
+		&.en {
+			background: url('../img/icons/laguage_EN.svg') 100% 50% no-repeat;
+			background-size: 100% auto;
 		}
 	}
 }
@@ -486,8 +501,9 @@ section.experience-section {
 				background-size: 100% auto;
 
 				&.active {
-					background: url('../img/icons/sub_close_btn.svg') 0 0 no-repeat;
+					background: url('../img/icons/sub_open_btn.svg') 0 0 no-repeat;
 					background-size: 100% auto;
+					transform: rotate(45deg);
 				}
 			}
 			div.image {
@@ -544,7 +560,7 @@ section.experience-section {
 				span.categorys {
 					display: inline-block;
 					background: #fff;
-					margin-right: 5px;
+					margin: 3px 5px 3px 0;
 					padding: 8px 10px;
 					font-family: 'tt-norms';
 					font-size: 13px;
@@ -559,10 +575,33 @@ section.experience-section {
 section.etc-section {
 	padding: 145px 25px 0 25px;
 
+	div.image {
+		position: relative;
+		border-radius: 30px;
+		overflow: hidden;
+
+		&.btm {
+			margin: 50px 0 80px 0;
+		}
+		img {
+			width: 100%;
+			aspect-ratio: 100 / 125; /* 너비:높이 비율 = 100:110 */
+			object-fit: cover;
+		}
+
+	}
+
 	p.etc-title {
 		font-family: 'tt-norms';
 		font-size: 27px; 
-		padding-bottom: 50px;
+		padding-bottom: 30px;
+
+		&.contact {
+			padding-bottom: 50px;
+		}
+		span {
+			font-size: 12px;
+		}
 	}
 	p.etc-text {
 		font-size: 14px; 
@@ -579,6 +618,44 @@ section.etc-section {
 		p.down {
 
 		}
+	}
+
+	div.company-section {
+		padding: 50px 0;
+	}
+	div.our-service {
+		padding: 50px 0;
+		border-top: 1px solid rgba(0,0,0,0.3);
+		border-bottom: 1px solid rgba(0,0,0,0.3);
+
+		div.services {
+
+			div.sec {
+				padding: 25px 0;
+				border-bottom: 1px solid #ddd;
+
+				&.f {
+					padding-top: 0;
+				}
+				&.l {
+					border-bottom: 0;
+					padding-bottom: 0;
+				}
+
+				p.tt {
+					font-family: 'tt-norms';
+					font-size: 17px;
+					padding-bottom: 15px;
+				}
+				p.ct {
+					font-size: 13px;
+					line-height: 23px;
+				}
+			}
+		}
+	}
+	div.our-team {
+		padding-top: 50px;
 	}
 }
 

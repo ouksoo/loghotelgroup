@@ -220,11 +220,12 @@ nav.navigation-bar a.menu-click-icon {
 .top-nav h1.logo {
   position: absolute;
   left: 25px;
-  top: 25px;
+  top: 30px;
   background: url("../img/icons/GNB_log_hotel_logo.svg") 0 0 no-repeat;
   background-size: 100% auto;
   width: 118px;
   height: 40px;
+  z-index: 10;
 }
 .top-nav div.nav-films {
   display: none;
@@ -233,7 +234,7 @@ nav.navigation-bar a.menu-click-icon {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: #848270;
   z-index: 9;
   /*
   &.active {
@@ -242,9 +243,9 @@ nav.navigation-bar a.menu-click-icon {
   	*/
 }
 .top-nav div.nav-films ul.gnbmenus {
-  line-height: 45px;
+  line-height: 48px;
   margin-top: 50%;
-  margin-left: 25px;
+  margin-left: 35px;
 }
 .top-nav div.nav-films ul.gnbmenus li a {
   display: inline-block;
@@ -264,7 +265,7 @@ nav.navigation-bar a.menu-click-icon {
   right: 25px;
   cursor: pointer;
   display: inline-block;
-  padding: 22px 11px;
+  padding: 22px 10px;
   z-index: 10;
   background: #000;
   border-radius: 10px;
@@ -308,6 +309,18 @@ nav.navigation-bar a.menu-click-icon {
 }
 .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
+}
+.top-nav a.link-lang {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, 0%);
+  width: 70px;
+  height: 20px;
+}
+.top-nav a.link-lang.en {
+  background: url("../img/icons/laguage_EN.svg") 100% 50% no-repeat;
+  background-size: 100% auto;
 }
 
 section.main-header div.scroll-wrapper {
@@ -622,8 +635,9 @@ section.experience-section div.experience-list div.inner a.show-detail {
   background-size: 100% auto;
 }
 section.experience-section div.experience-list div.inner a.show-detail.active {
-  background: url("../img/icons/sub_close_btn.svg") 0 0 no-repeat;
+  background: url("../img/icons/sub_open_btn.svg") 0 0 no-repeat;
   background-size: 100% auto;
+  transform: rotate(45deg);
 }
 section.experience-section div.experience-list div.inner div.image {
   position: relative;
@@ -674,7 +688,7 @@ section.experience-section div.experience-list div.inner div.category-wrap p {
 section.experience-section div.experience-list div.inner div.category-wrap span.categorys {
   display: inline-block;
   background: #fff;
-  margin-right: 5px;
+  margin: 3px 5px 3px 0;
   padding: 8px 10px;
   font-family: "tt-norms";
   font-size: 13px;
@@ -684,10 +698,30 @@ section.experience-section div.experience-list div.inner div.category-wrap span.
 section.etc-section {
   padding: 145px 25px 0 25px;
 }
+section.etc-section div.image {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+section.etc-section div.image.btm {
+  margin: 50px 0 80px 0;
+}
+section.etc-section div.image img {
+  width: 100%;
+  aspect-ratio: 100/125; /* 너비:높이 비율 = 100:110 */
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 section.etc-section p.etc-title {
   font-family: "tt-norms";
   font-size: 27px;
+  padding-bottom: 30px;
+}
+section.etc-section p.etc-title.contact {
   padding-bottom: 50px;
+}
+section.etc-section p.etc-title span {
+  font-size: 12px;
 }
 section.etc-section p.etc-text {
   font-size: 14px;
@@ -701,6 +735,38 @@ section.etc-section div.infos p.up {
   color: #54575C;
   padding-bottom: 10px;
 }
+section.etc-section div.company-section {
+  padding: 50px 0;
+}
+section.etc-section div.our-service {
+  padding: 50px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+section.etc-section div.our-service div.services div.sec {
+  padding: 25px 0;
+  border-bottom: 1px solid #ddd;
+}
+section.etc-section div.our-service div.services div.sec.f {
+  padding-top: 0;
+}
+section.etc-section div.our-service div.services div.sec.l {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+section.etc-section div.our-service div.services div.sec p.tt {
+  font-family: "tt-norms";
+  font-size: 17px;
+  padding-bottom: 15px;
+}
+section.etc-section div.our-service div.services div.sec p.ct {
+  font-size: 13px;
+  line-height: 23px;
+}
+section.etc-section div.our-team {
+  padding-top: 50px;
+}
+
 h2.h2-title {
   font-family: "tt-norms";
   font-size: 27px;
