@@ -1,9 +1,21 @@
 
 //category change
+/*
 function filterByCategory(category) {
 	$('.experience-list .inner').each(function () {
 		const itemCat = $(this).data('category');
 		if (category === 'all' || itemCat === category) {
+			$(this).stop(true, true).fadeIn(300);
+		} else {
+			$(this).stop(true, true).fadeOut(300);
+		}
+	});
+}
+*/
+function filterByCategory(category) {
+	$('.experience-list .inner').each(function () {
+		const itemCats = $(this).data('category').toString().split(' ');
+		if (category === 'all' || itemCats.includes(category)) {
 			$(this).stop(true, true).fadeIn(300);
 		} else {
 			$(this).stop(true, true).fadeOut(300);
@@ -29,16 +41,19 @@ var LOG = {
 	navigationInitialize : function() {
 		let lastScrollpos = window.pageYOffset;
 		let menuButtonCheck = document.querySelector(".menu-btn");
-		window.onscroll = function() {
-			let currentScrollPos = window.pageYOffset;
-			if (lastScrollpos > currentScrollPos) {
-				$('.top-nav').css('top', '0');
-			} else {
-				$('.top-nav').css('top', '-75px');
-			}
-			lastScrollpos = currentScrollPos;
-			menuButtonCheck.checked = false;
-		} 
+
+		if($('body').hasClass('main-page')) {
+			window.onscroll = function() {
+				let currentScrollPos = window.pageYOffset;
+				if (lastScrollpos > currentScrollPos) {
+					$('.top-nav').css('top', '0');
+				} else {
+					$('h1.logo').css('top', '30px');
+				}
+				lastScrollpos = currentScrollPos;
+				menuButtonCheck.checked = false;
+			} 
+		}
 
 		$('label.menu-icon').on('click', function (e) {
 			$('.nav-films').toggleClass('active');
@@ -60,7 +75,12 @@ var LOG = {
 			// 마스크 크기 확대
 			const baseSize = 88.6667;
 			const maxSize = 4800;
-			const newSize = Math.min(baseSize + scrollY * 3, maxSize);
+			const minSize = 88.6667; 
+			const newSize = Math.min(
+				Math.max(baseSize + scrollY * 3, minSize), // 최소값 보장
+				maxSize                                    // 최대값 제한
+			);
+			//const newSize = Math.min(baseSize + scrollY * 3, maxSize);
 			videoWrapper.style.webkitMaskSize = `${newSize}vw`;
 			videoWrapper.style.maskSize = `${newSize}vw`;
 
@@ -105,7 +125,7 @@ var LOG = {
 		});
 		$('.custom-options div').on('click', function () {
 			const category = $(this).data('category');
-			$('.custom-select').text($(this).text());
+			$('.custom-select').text($(this).text()).removeClass('active');
 			$('.custom-options').hide();
 
 			$('.category-filter div').removeClass('active');
@@ -122,7 +142,8 @@ var LOG = {
 		});
 	},
 	globalLinkStart : function() {
-		var url = "http://127.0.0.1:5500/";    
+		var url = "https://ouksoo77.mycafe24.com/log/";    
+		//var url = "http://127.0.0.1:5500/";
 
 		$('.link-logo').on('click', function() {
 			$(location).attr('href',url + "index.html");

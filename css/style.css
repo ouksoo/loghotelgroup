@@ -44,6 +44,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Apple SD Gothic Neo", sans-serif;
+  overscroll-behavior: none;
 }
 
 .clearfix:after {
@@ -226,6 +227,10 @@ nav.navigation-bar a.menu-click-icon {
   width: 118px;
   height: 40px;
   z-index: 10;
+  transition: top 0.75s ease-in-out;
+}
+.top-nav h1.logo.main-logo {
+  top: -100px;
 }
 .top-nav div.nav-films {
   display: none;
@@ -249,6 +254,7 @@ nav.navigation-bar a.menu-click-icon {
 }
 .top-nav div.nav-films ul.gnbmenus li a {
   display: inline-block;
+  font-family: "tt-norms";
   font-size: 34px;
   text-decoration: none;
 }
@@ -443,6 +449,14 @@ section.main-section-2 {
 section.main-section-2 div.main-card-section1 {
   position: relative;
 }
+section.main-section-2 div.main-card-section1 div.main-film {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
 section.main-section-2 div.main-card-section1 div.our-brand-swiper img {
   width: 100%;
 }
@@ -462,8 +476,10 @@ section.main-section-2 div.main-card-section1 div.card-txt-area {
   transform: translate(-50%, 0%);
   border-top: 1px solid rgba(200, 200, 200, 0.5);
   padding: 25px 0;
+  z-index: 2;
 }
 section.main-section-2 div.main-card-section1 div.card-txt-area p.inner-txt-1 {
+  font-family: "tt-norms";
   font-size: 28px;
   color: #fff;
   line-height: 31px;
@@ -483,7 +499,7 @@ section.main-section-2 div.main-card-section1 div.drip-drop-logo {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 2;
 }
 section.main-section-2 div.main-card-section1 div.water-house-logo {
   position: absolute;
@@ -525,7 +541,9 @@ section.brand-section div.brand-logo.waterhouse {
 }
 section.brand-section div.brand-image {
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  overflow: hidden;
 }
 section.brand-section div.brand-image img {
   width: 100%;
@@ -595,6 +613,30 @@ section.brand-section div.brand-more {
   text-align: center;
   padding-bottom: 50px;
 }
+section.brand-section div.brand-more div.brand-waterhouse {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+section.brand-section div.brand-more div.brand-waterhouse .main-film {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+section.brand-section div.brand-more div.brand-waterhouse div.water-house-logo {
+  position: absolute;
+  width: 256px;
+  height: 18px;
+  background: url("../img/icons/main_thewaterhouse_logo.svg") 50% 50% no-repeat;
+  background-size: cover;
+  left: 50%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
 section.brand-section div.brand-more img {
   width: 100%;
 }
@@ -633,6 +675,8 @@ section.experience-section div.experience-list div.inner a.show-detail {
   z-index: 5;
   background: url("../img/icons/sub_open_btn.svg") 0 0 no-repeat;
   background-size: 100% auto;
+  transform: rotate(0deg);
+  transition: transform 0.5s;
 }
 section.experience-section div.experience-list div.inner a.show-detail.active {
   background: url("../img/icons/sub_open_btn.svg") 0 0 no-repeat;
@@ -838,7 +882,7 @@ section.main-section-2 .swiper-button-next, section.main-section-2 .swiper-butto
   width: 26px;
   height: 26px;
   margin-top: 15px;
-  z-index: 10;
+  z-index: 9;
   cursor: pointer;
   display: inline-block;
   top: 100%;
@@ -872,6 +916,8 @@ section.main-section-2 .swiper-button-next {
 }
 section.main-section-2 .swiper-slide {
   position: relative;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 .custom-select-wrapper {

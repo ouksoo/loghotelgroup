@@ -43,7 +43,10 @@
 
 
 * {box-sizing: border-box}
-html, body {margin:0; padding:0; font-family: 'Apple SD Gothic Neo', sans-serif;}
+html, body {
+	margin:0; padding:0; font-family: 'Apple SD Gothic Neo', sans-serif;
+	overscroll-behavior: none;
+}
 
 .clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden; } .clearfix { display:inline-block; }/*  ie-mac \*/ *html .clearfix {height: 1%;} .clearfix {display: block;}/* ie-mac */
 
