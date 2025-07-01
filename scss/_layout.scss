@@ -267,8 +267,11 @@ section.main-header {
 }
 
 section.main-section-1 {
-	padding: 100px 25px;
+	padding: 100px 25px 70px 25px;
 
+	#main-our-brand-link {
+		height: 30px;
+	}
 	p.txt-main-1 {
 		font-family: 'tt-norms';
 		font-size: 17px;
@@ -418,7 +421,7 @@ section.brand-section {
 				display: block; font-size: 15px; color: #54575C;
 
 				a {
-					color: #54575C;
+					color: #DB6B49;
 				}
 			}
 		}

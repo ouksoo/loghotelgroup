@@ -422,7 +422,10 @@ section.main-header div.text-intro div.callout {
 }
 
 section.main-section-1 {
-  padding: 100px 25px;
+  padding: 100px 25px 70px 25px;
+}
+section.main-section-1 #main-our-brand-link {
+  height: 30px;
 }
 section.main-section-1 p.txt-main-1 {
   font-family: "tt-norms";
@@ -571,7 +574,7 @@ section.brand-section div.brand-info .info-table span.info {
   color: #54575C;
 }
 section.brand-section div.brand-info .info-table span.info a {
-  color: #54575C;
+  color: #DB6B49;
 }
 section.brand-section div.brand-detail {
   padding: 40px 0;
