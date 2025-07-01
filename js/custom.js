@@ -142,8 +142,8 @@ var LOG = {
 		});
 	},
 	globalLinkStart : function() {
-		var url = "https://ouksoo77.mycafe24.com/log/";    
-		//var url = "http://127.0.0.1:5500/";
+		//var url = "https://ouksoo77.mycafe24.com/log/";    
+		var url = "http://127.0.0.1:5500/";
 
 		$('.link-logo').on('click', function() {
 			$(location).attr('href',url + "index.html");

@@ -191,6 +191,14 @@ body.sub-bgcolor {
   background-color: #E6E6E6;
 }
 
+body.kor .eng {
+  display: none;
+}
+
+body.eng .kor {
+  display: none;
+}
+
 nav.navigation-bar {
   position: fixed;
   width: 100%;
