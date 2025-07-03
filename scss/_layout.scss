@@ -58,6 +58,10 @@ nav.navigation-bar {
 		&.main-logo {
 			top: -100px;
 		}
+
+		@media (min-width: 1200px) { //pc
+			left: 5%;
+		}
 	}
 
 	div.nav-films {
@@ -88,7 +92,7 @@ nav.navigation-bar {
 			@media (min-width: 1200px) { //pc
 				line-height: 15px;
 				top: 50px;
-				right: 140px;
+				right: 10%;
 				transform: translate(0%, -50%);
 				margin-left: 0px;
 			}
@@ -216,7 +220,7 @@ nav.navigation-bar {
 		}
 		@media (min-width: 1200px) { //pc
 			left: auto;
-			right: 50px;
+			right: 5%;
 			bottom: auto;
 			top: 41px;
 			transform: translate(0%, 0%);
@@ -317,17 +321,11 @@ section.main-header {
 
 			p.txt-main-bottom {
 				font-family: 'tt-norms';
-				font-size: 27px;
+				font-size: 28px;
 				color: #070707;
 
-				@media (max-width: 1200px) {
-					&.mob {display: block;}
-					&.pcb {display: none;}
-				}
 				@media (min-width: 1200px) {
 					font-size: 47px;
-					&.mob {display: none;}
-					&.pcb {display: block;}
 				}
 			}
 		}
@@ -361,7 +359,7 @@ section.main-section-1 {
 	}
 	a.experience-link {
 		font-family: 'tt-norms';
-		font-size: 13px;
+		font-size: 17px;
 		color: #000;
 		background: url('../img/icons/main_arrow_go.svg') 100% 50% no-repeat;
 		background-size: 24px auto;
@@ -699,6 +697,10 @@ section.experience-section {
 section.etc-section {
 	padding: 145px 25px 0 25px;
 
+	@media (min-width: 1200px) { //pc
+		padding: 280px 5% 0 5%;
+	}
+
 	div.image {
 		position: relative;
 		border-radius: 30px;
@@ -706,13 +708,16 @@ section.etc-section {
 
 		&.btm {
 			margin: 50px 0 80px 0;
+
+			@media (min-width: 1200px) { //pc
+				margin: 100px 0 80px 0;
+			}
 		}
 		img {
 			width: 100%;
 			aspect-ratio: 100 / 125; /* 너비:높이 비율 = 100:110 */
 			object-fit: cover;
 		}
-
 	}
 
 	p.etc-title {
@@ -722,48 +727,130 @@ section.etc-section {
 
 		&.contact {
 			padding-bottom: 50px;
+
+			@media (min-width: 1200px) { //pc
+				float: left;
+				font-size: 70px; 
+			}
 		}
 		span {
 			font-size: 12px;
 		}
 	}
-	p.etc-text {
-		font-size: 14px; 
-		line-height: 23px;
-	}
-	div.infos {
-		font-size: 14px;
-		margin-top: 30px;
 
-		p.up {
-			color: #54575C;
-			padding-bottom: 10px;
+	div.contact-wrapper {
+		@media (min-width: 1200px) { //pc
+			float: right;
+			width: 45vw;
+			padding-top: 15px;
+			padding-right: 100px;
 		}
-		p.down {
 
+		p.etc-text {
+			font-size: 14px; 
+			line-height: 23px;
+
+			@media (min-width: 1200px) { //pc
+				font-size: 20px; 
+				line-height: 30px;
+			}
+		}
+		div.infos {
+			font-size: 14px;
+			margin-top: 30px;
+
+			p.up {
+				color: #54575C;
+				padding-bottom: 10px;
+			}
+			p.down {
+
+			}
+		}
+	}
+
+	div.company-wrapper {
+		@media (min-width: 1200px) { //pc
+			padding-bottom: 100px;
+		}
+
+		div.image {
+			@media (min-width: 1200px) { //pc
+				float: left;
+				width: 40%;
+			}
+		}
+		p.etc-title {
+			font-family: 'tt-norms';
+			font-size: 27px; 
+			padding-bottom: 30px;
+
+			span {
+				font-size: 12px;
+			}
+		}
+		p.etc-text {
+			font-size: 14px; 
+			line-height: 23px;
+		}
+		div.infos {
+			font-size: 14px;
+			margin-top: 30px;
+
+			p.up {
+				color: #54575C;
+				padding-bottom: 10px;
+			}
+			p.down {
+
+			}
 		}
 	}
 
 	div.company-section {
 		padding: 50px 0;
+
+		@media (min-width: 1200px) { //pc
+			float: right;
+			width: 57%;
+			padding: 0px 0 0 3%;
+		}
 	}
 	div.our-service {
 		padding: 50px 0;
 		border-top: 1px solid rgba(0,0,0,0.3);
 		border-bottom: 1px solid rgba(0,0,0,0.3);
 
+		@media (min-width: 1200px) { //pc
+			padding: 100px 0;
+		}
+
 		div.services {
 
 			div.sec {
 				padding: 25px 0;
 				border-bottom: 1px solid #ddd;
+				@media (min-width: 1200px) { //pc
+					float: left;
+					width: 33.3%;
+					padding-right: 2.8%;
+				}
 
 				&.f {
 					padding-top: 0;
+					@media (min-width: 1200px) { //pc
+						padding-top: 25px;
+					}
 				}
 				&.l {
 					border-bottom: 0;
 					padding-bottom: 0;
+				}
+				&.p {
+					@media (min-width: 1200px) { //pc
+						border-bottom: 0;
+						padding-bottom: 0;
+					}
 				}
 
 				p.tt {
@@ -778,15 +865,59 @@ section.etc-section {
 			}
 		}
 	}
+
+	div.team-wrapper {
+		@media (min-width: 1200px) { //pc
+			padding-bottom: 100px;
+		}
+
+		div.image {
+			@media (min-width: 1200px) { //pc
+				float: right;
+				width: 43%;
+			}
+		}
+		p.etc-title {
+			font-family: 'tt-norms';
+			font-size: 27px; 
+			padding-bottom: 30px;
+
+			span {
+				font-size: 12px;
+			}
+		}
+		p.etc-text {
+			font-size: 14px; 
+			line-height: 23px;
+		}
+		div.infos {
+			font-size: 14px;
+			margin-top: 30px;
+
+			p.up {
+				color: #54575C;
+				padding-bottom: 10px;
+			}
+			p.down {
+
+			}
+		}
+	}
 	div.our-team {
 		padding-top: 50px;
+
+		@media (min-width: 1200px) { //pc
+			float: left;
+			width: 50%;
+			padding: 100px 7% 0 0;
+		}
 	}
 }
 
 
 h2.h2-title {
 	font-family: 'tt-norms';
-	font-size: 17px;
+	font-size: 22px;
 	padding: 50px 0 20px 0;
 }
 
@@ -796,40 +927,84 @@ footer {
 	overflow: hidden;
 	font-family: 'tt-norms';
 
+	@media (min-width: 1200px) { //pc
+		height: 620px;
+	}
+
 	&.common-footer {
 		margin: 50px 0 0 0;
 		border-radius: 30px 30px 0 0;
 		padding: 70px 30px;
 
+		@media (max-width: 1200px) { //mobile
+
+		}
+		@media (min-width: 1200px) { //pc
+			margin: 200px 0 0 0;
+			border-radius: 30px 30px 0 0;
+			padding: 120px 70px;
+		}
 		div.footer-logo {
 			background: url('../img/icons/footer_log_hotel_logo.svg') 0 0 no-repeat;
 			background-size: 100% auto;
 			width: 280px;
 			height: 30px;
+
+			@media (max-width: 1200px) { //mobile
+
+			}
+			@media (min-width: 1200px) { //pc
+				width: 410px;
+				height: 32px;
+			}
 		}
 		ul {
 			margin: 40px 0;
 
+			@media (min-width: 1200px) { //pc
+				position: absolute;
+				right: 350px;
+				top: 60px;
+			}
+
 			li {
 				line-height: 45px;
+
+				@media (min-width: 1200px) { //pc
+					line-height: 60px;
+				}
 				a {
 					color: #fff;
 					font-size: 21px;
+
+					@media (min-width: 1200px) { //pc
+						font-size: 24px;
+					}
 				}
 			}
 		}
-		div.footer-privacy {
-			color: #fff;
-			padding: 00px 0 6px 0;
 
-			a {
-				color: #fff;
-				font-size: 12px;
+		div.copy-wrapper {
+
+			@media (min-width: 1200px) { //pc
+				position: absolute;
+				right: 290px;
+				bottom: 60px;
 			}
-		}
-		p.copyright-footer {
-			color: #fff;
-			font-size: 13px;
+
+			div.footer-privacy {
+				color: #fff;
+				padding: 0px 0 6px 0;
+
+				a {
+					color: #fff;
+					font-size: 12px;
+				}
+			}
+			p.copyright-footer {
+				color: #fff;
+				font-size: 13px;
+			}
 		}
 	}
 

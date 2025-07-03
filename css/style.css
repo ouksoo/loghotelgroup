@@ -240,6 +240,11 @@ nav.navigation-bar a.menu-click-icon {
 .top-nav h1.logo.main-logo {
   top: -100px;
 }
+@media (min-width: 1200px) {
+  .top-nav h1.logo {
+    left: 5%;
+  }
+}
 .top-nav div.nav-films {
   display: none;
   position: fixed;
@@ -269,7 +274,7 @@ nav.navigation-bar a.menu-click-icon {
   .top-nav div.nav-films ul.gnbmenus {
     line-height: 15px;
     top: 50px;
-    right: 140px;
+    right: 10%;
     transform: translate(0%, -50%);
     margin-left: 0px;
   }
@@ -369,7 +374,7 @@ nav.navigation-bar a.menu-click-icon {
 @media (min-width: 1200px) {
   .top-nav a.link-lang {
     left: auto;
-    right: 50px;
+    right: 5%;
     bottom: auto;
     top: 41px;
     transform: translate(0%, 0%);
@@ -468,26 +473,12 @@ section.main-header div.video-intro div.bottom ul a {
 }
 section.main-header div.video-intro div.bottom p.txt-main-bottom {
   font-family: "tt-norms";
-  font-size: 27px;
+  font-size: 28px;
   color: #070707;
-}
-@media (max-width: 1200px) {
-  section.main-header div.video-intro div.bottom p.txt-main-bottom.mob {
-    display: block;
-  }
-  section.main-header div.video-intro div.bottom p.txt-main-bottom.pcb {
-    display: none;
-  }
 }
 @media (min-width: 1200px) {
   section.main-header div.video-intro div.bottom p.txt-main-bottom {
     font-size: 47px;
-  }
-  section.main-header div.video-intro div.bottom p.txt-main-bottom.mob {
-    display: none;
-  }
-  section.main-header div.video-intro div.bottom p.txt-main-bottom.pcb {
-    display: block;
   }
 }
 section.main-header div.text-intro {
@@ -516,7 +507,7 @@ section.main-section-1 p.txt-main-2 {
 }
 section.main-section-1 a.experience-link {
   font-family: "tt-norms";
-  font-size: 13px;
+  font-size: 17px;
   color: #000;
   background: url("../img/icons/main_arrow_go.svg") 100% 50% no-repeat;
   background-size: 24px auto;
@@ -823,6 +814,11 @@ section.experience-section div.experience-list div.inner div.category-wrap span.
 section.etc-section {
   padding: 145px 25px 0 25px;
 }
+@media (min-width: 1200px) {
+  section.etc-section {
+    padding: 280px 5% 0 5%;
+  }
+}
 section.etc-section div.image {
   position: relative;
   border-radius: 30px;
@@ -830,6 +826,11 @@ section.etc-section div.image {
 }
 section.etc-section div.image.btm {
   margin: 50px 0 80px 0;
+}
+@media (min-width: 1200px) {
+  section.etc-section div.image.btm {
+    margin: 100px 0 80px 0;
+  }
 }
 section.etc-section div.image img {
   width: 100%;
@@ -845,39 +846,120 @@ section.etc-section p.etc-title {
 section.etc-section p.etc-title.contact {
   padding-bottom: 50px;
 }
+@media (min-width: 1200px) {
+  section.etc-section p.etc-title.contact {
+    float: left;
+    font-size: 70px;
+  }
+}
 section.etc-section p.etc-title span {
   font-size: 12px;
 }
-section.etc-section p.etc-text {
+@media (min-width: 1200px) {
+  section.etc-section div.contact-wrapper {
+    float: right;
+    width: 45vw;
+    padding-top: 15px;
+    padding-right: 100px;
+  }
+}
+section.etc-section div.contact-wrapper p.etc-text {
   font-size: 14px;
   line-height: 23px;
 }
-section.etc-section div.infos {
+@media (min-width: 1200px) {
+  section.etc-section div.contact-wrapper p.etc-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+section.etc-section div.contact-wrapper div.infos {
   font-size: 14px;
   margin-top: 30px;
 }
-section.etc-section div.infos p.up {
+section.etc-section div.contact-wrapper div.infos p.up {
+  color: #54575C;
+  padding-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  section.etc-section div.company-wrapper {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  section.etc-section div.company-wrapper div.image {
+    float: left;
+    width: 40%;
+  }
+}
+section.etc-section div.company-wrapper p.etc-title {
+  font-family: "tt-norms";
+  font-size: 27px;
+  padding-bottom: 30px;
+}
+section.etc-section div.company-wrapper p.etc-title span {
+  font-size: 12px;
+}
+section.etc-section div.company-wrapper p.etc-text {
+  font-size: 14px;
+  line-height: 23px;
+}
+section.etc-section div.company-wrapper div.infos {
+  font-size: 14px;
+  margin-top: 30px;
+}
+section.etc-section div.company-wrapper div.infos p.up {
   color: #54575C;
   padding-bottom: 10px;
 }
 section.etc-section div.company-section {
   padding: 50px 0;
 }
+@media (min-width: 1200px) {
+  section.etc-section div.company-section {
+    float: right;
+    width: 57%;
+    padding: 0px 0 0 3%;
+  }
+}
 section.etc-section div.our-service {
   padding: 50px 0;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
+@media (min-width: 1200px) {
+  section.etc-section div.our-service {
+    padding: 100px 0;
+  }
+}
 section.etc-section div.our-service div.services div.sec {
   padding: 25px 0;
   border-bottom: 1px solid #ddd;
 }
+@media (min-width: 1200px) {
+  section.etc-section div.our-service div.services div.sec {
+    float: left;
+    width: 33.3%;
+    padding-right: 2.8%;
+  }
+}
 section.etc-section div.our-service div.services div.sec.f {
   padding-top: 0;
+}
+@media (min-width: 1200px) {
+  section.etc-section div.our-service div.services div.sec.f {
+    padding-top: 25px;
+  }
 }
 section.etc-section div.our-service div.services div.sec.l {
   border-bottom: 0;
   padding-bottom: 0;
+}
+@media (min-width: 1200px) {
+  section.etc-section div.our-service div.services div.sec.p {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 section.etc-section div.our-service div.services div.sec p.tt {
   font-family: "tt-norms";
@@ -888,13 +970,51 @@ section.etc-section div.our-service div.services div.sec p.ct {
   font-size: 13px;
   line-height: 23px;
 }
+@media (min-width: 1200px) {
+  section.etc-section div.team-wrapper {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  section.etc-section div.team-wrapper div.image {
+    float: right;
+    width: 43%;
+  }
+}
+section.etc-section div.team-wrapper p.etc-title {
+  font-family: "tt-norms";
+  font-size: 27px;
+  padding-bottom: 30px;
+}
+section.etc-section div.team-wrapper p.etc-title span {
+  font-size: 12px;
+}
+section.etc-section div.team-wrapper p.etc-text {
+  font-size: 14px;
+  line-height: 23px;
+}
+section.etc-section div.team-wrapper div.infos {
+  font-size: 14px;
+  margin-top: 30px;
+}
+section.etc-section div.team-wrapper div.infos p.up {
+  color: #54575C;
+  padding-bottom: 10px;
+}
 section.etc-section div.our-team {
   padding-top: 50px;
+}
+@media (min-width: 1200px) {
+  section.etc-section div.our-team {
+    float: left;
+    width: 50%;
+    padding: 100px 7% 0 0;
+  }
 }
 
 h2.h2-title {
   font-family: "tt-norms";
-  font-size: 17px;
+  font-size: 22px;
   padding: 50px 0 20px 0;
 }
 
@@ -903,10 +1023,22 @@ footer {
   overflow: hidden;
   font-family: "tt-norms";
 }
+@media (min-width: 1200px) {
+  footer {
+    height: 620px;
+  }
+}
 footer.common-footer {
   margin: 50px 0 0 0;
   border-radius: 30px 30px 0 0;
   padding: 70px 30px;
+}
+@media (min-width: 1200px) {
+  footer.common-footer {
+    margin: 200px 0 0 0;
+    border-radius: 30px 30px 0 0;
+    padding: 120px 70px;
+  }
 }
 footer.common-footer div.footer-logo {
   background: url("../img/icons/footer_log_hotel_logo.svg") 0 0 no-repeat;
@@ -914,25 +1046,55 @@ footer.common-footer div.footer-logo {
   width: 280px;
   height: 30px;
 }
+@media (min-width: 1200px) {
+  footer.common-footer div.footer-logo {
+    width: 410px;
+    height: 32px;
+  }
+}
 footer.common-footer ul {
   margin: 40px 0;
 }
+@media (min-width: 1200px) {
+  footer.common-footer ul {
+    position: absolute;
+    right: 350px;
+    top: 60px;
+  }
+}
 footer.common-footer ul li {
   line-height: 45px;
+}
+@media (min-width: 1200px) {
+  footer.common-footer ul li {
+    line-height: 60px;
+  }
 }
 footer.common-footer ul li a {
   color: #fff;
   font-size: 21px;
 }
-footer.common-footer div.footer-privacy {
+@media (min-width: 1200px) {
+  footer.common-footer ul li a {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  footer.common-footer div.copy-wrapper {
+    position: absolute;
+    right: 290px;
+    bottom: 60px;
+  }
+}
+footer.common-footer div.copy-wrapper div.footer-privacy {
   color: #fff;
   padding: 0px 0 6px 0;
 }
-footer.common-footer div.footer-privacy a {
+footer.common-footer div.copy-wrapper div.footer-privacy a {
   color: #fff;
   font-size: 12px;
 }
-footer.common-footer p.copyright-footer {
+footer.common-footer div.copy-wrapper p.copyright-footer {
   color: #fff;
   font-size: 13px;
 }
