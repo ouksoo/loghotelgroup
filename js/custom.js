@@ -69,13 +69,29 @@ var LOG = {
 	mainVisualInitialize : function() {
 		const videoWrapper = document.querySelector('.video-wrapper');
 
+		if($(window).width() > 1200) {
+			baseSize = 70;
+			minSize = 70; 
+		}
+		else {
+			baseSize = 88;
+			minSize = 88; 
+		}
+		window.addEventListener('resize', () => {
+			if($(window).width() > 1200) {
+				baseSize = 70;
+				minSize = 70; 
+			}
+			else {
+				baseSize = 88;
+				minSize = 88; 
+			}
+		});
 		window.addEventListener('scroll', () => {
 			const scrollY = window.scrollY;
 
 			// 마스크 크기 확대
-			const baseSize = 88.6667;
 			const maxSize = 4800;
-			const minSize = 88.6667; 
 			const newSize = Math.min(
 				Math.max(baseSize + scrollY * 3, minSize), // 최소값 보장
 				maxSize                                    // 최대값 제한
@@ -87,7 +103,7 @@ var LOG = {
 			// 마스크 위치 이동 (Y값 20% → 55%)
 			const startScroll = 0; // 마스크 위치 변경 시작 스크롤값
 			const endScroll = 500;   // 마스크 위치 변경 완료 스크롤값
-			const startY = 50;
+			const startY = 42;
 			const endY = 52;
 
 			let newY = startY;
