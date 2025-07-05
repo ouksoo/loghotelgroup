@@ -116,6 +116,66 @@ var LOG = {
 			videoWrapper.style.maskPosition = `48.1% ${newY}%`;
 		});
 	},
+	mainSlideSwiperBrand: function () {
+		let hotelSwiper, houseSwiper;
+
+		function initSwiper() {
+			const isDesktop = window.innerWidth > 1200;
+
+			// 먼저 이미 생성된 Swiper가 있다면 destroy
+			if (hotelSwiper) {
+				hotelSwiper.destroy(true, true);
+				hotelSwiper = null;
+			}
+			if (houseSwiper) {
+				houseSwiper.destroy(true, true);
+				houseSwiper = null;
+			}
+
+			// 공통 옵션 + 분기처리
+			const hotelOptions = {
+				navigation: {
+					nextEl: ".drip-next",
+					prevEl: ".drip-prev",
+				},
+				...(isDesktop && {
+					slidesPerView: 'auto',
+  					centeredSlides: true,
+					spaceBetween: 30,
+					loop: true,
+				}),
+			};
+
+			const houseOptions = {
+				navigation: {
+					nextEl: ".water-next",
+					prevEl: ".water-prev",
+				},
+				...(isDesktop && {
+					slidesPerView: 'auto',
+  					centeredSlides: true,
+					spaceBetween: 30,
+					loop: true,
+				}),
+			};
+
+			hotelSwiper = new Swiper(".hotel-drip-drop", hotelOptions);
+			houseSwiper = new Swiper(".the-water-house", houseOptions);
+		}
+
+		// 초기 실행
+		initSwiper();
+
+		// 리사이즈 시 재실행
+		let resizeTimer;
+		window.addEventListener('resize', function () {
+			clearTimeout(resizeTimer);
+			resizeTimer = setTimeout(() => {
+				initSwiper();
+			}, 300);
+		});
+	},
+	/*
 	mainSlideSwiperBrand : function() {
 		//main DRIP & DROP slide object
 		var BrandSwipersHotel = new Swiper(".hotel-drip-drop", {
@@ -133,6 +193,7 @@ var LOG = {
 			},
 		});
 	},
+	*/
 	experienceCategorySelect : function() {
 		$('.custom-select').on('click', function (e) {
 			e.preventDefault();
