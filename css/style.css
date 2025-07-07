@@ -431,11 +431,12 @@ section.main-header div.video-intro div.media video {
 }
 @media (min-width: 1200px) {
   section.main-header div.video-intro div.media {
-    -webkit-mask-size: 70vw;
-    mask-size: 70vw;
+    -webkit-mask-size: 88vw;
+    mask-size: 88vw;
   }
 }
 section.main-header div.video-intro div.bottom {
+  display: block;
   align-items: flex-end;
   display: grid;
   grid-template-columns: auto auto;
@@ -447,7 +448,12 @@ section.main-header div.video-intro div.bottom {
 }
 @media (min-width: 1200px) {
   section.main-header div.video-intro div.bottom {
+    display: none;
+    position: absolute;
+    z-index: 1;
     padding-bottom: 40px;
+    padding-left: 0px;
+    left: 5%;
   }
 }
 section.main-header div.video-intro div.bottom ul {
@@ -1317,20 +1323,40 @@ section.main-section-2 a.brand-read-more {
   font-size: 14px;
   padding-top: 5px;
 }
+@media (min-width: 1200px) {
+  section.main-section-2 a.brand-read-more {
+    width: 10%;
+  }
+}
 section.main-section-2 .swiper-button-prev {
   left: 0;
   background: url("../img/icons/arrow_on_L.svg") 0 0 no-repeat;
   background-size: cover;
+}
+@media (min-width: 1200px) {
+  section.main-section-2 .swiper-button-prev {
+    left: 40%;
+  }
 }
 section.main-section-2 .swiper-button-next {
   right: 0;
   background: url("../img/icons/arrow_on_R.svg") 0 0 no-repeat;
   background-size: cover;
 }
+@media (min-width: 1200px) {
+  section.main-section-2 .swiper-button-next {
+    right: 40%;
+  }
+}
 section.main-section-2 .swiper-slide {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+section.main-section-2 .swiper-slide-active {
+  opacity: 1;
 }
 
 .custom-select-wrapper {

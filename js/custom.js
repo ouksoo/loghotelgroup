@@ -70,8 +70,8 @@ var LOG = {
 		const videoWrapper = document.querySelector('.video-wrapper');
 
 		if($(window).width() > 1200) {
-			baseSize = 70;
-			minSize = 70; 
+			baseSize = 88;
+			minSize = 88; 
 		}
 		else {
 			baseSize = 88;
@@ -79,8 +79,8 @@ var LOG = {
 		}
 		window.addEventListener('resize', () => {
 			if($(window).width() > 1200) {
-				baseSize = 70;
-				minSize = 70; 
+				baseSize = 88;
+				minSize = 88; 
 			}
 			else {
 				baseSize = 88;
@@ -110,6 +110,15 @@ var LOG = {
 			if (scrollY > startScroll) {
 				const progress = Math.min((scrollY - startScroll) / (endScroll - startScroll), 1);
 				newY = startY + (endY - startY) * progress;
+
+				if($(window).width() > 1200) {
+					if(newY >= endY) {
+						$('.main-header div.bottom').fadeIn();
+					}
+					else {
+						$('.main-header div.bottom').fadeOut();
+					}
+				}
 			}
 
 			videoWrapper.style.webkitMaskPosition = `48.1% ${newY}%`;
@@ -142,7 +151,6 @@ var LOG = {
 					slidesPerView: 'auto',
   					centeredSlides: true,
 					spaceBetween: 30,
-					loop: true,
 				}),
 			};
 
@@ -155,7 +163,6 @@ var LOG = {
 					slidesPerView: 'auto',
   					centeredSlides: true,
 					spaceBetween: 30,
-					loop: true,
 				}),
 			};
 

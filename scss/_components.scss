@@ -25,22 +25,37 @@ section.main-section-2 {
 		font-family: 'tt-norms';
 		font-size: 14px;
 		padding-top: 5px;
+
+		@media (min-width: 1200px) {
+			width: 10%;
+		}
 	}
 	.swiper-button-prev {
 		left: 0;
 		background: url('../img/icons/arrow_on_L.svg') 0 0 no-repeat;
 		background-size: cover;
+		@media (min-width: 1200px) {
+			left: 40%;
+		}
 	}
 	.swiper-button-next {
 		right: 0;
 		background: url('../img/icons/arrow_on_R.svg') 0 0 no-repeat;
 		background-size: cover;
+		@media (min-width: 1200px) {
+			right: 40%;
+		}
 	}
 
 	.swiper-slide {
 		position: relative;
 		border-radius: 30px;
 		overflow: hidden;
+		opacity: 0.3;
+  		transition: opacity 0.3s ease;
+	}
+	.swiper-slide-active {
+		opacity: 1;
 	}
 
 }
