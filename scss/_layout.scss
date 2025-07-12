@@ -2,19 +2,6 @@ body.sub-bgcolor {
 	background-color: #E6E6E6;
 }
 
-body.kor {
-
-	.eng {
-		display: none;
-	}
-}
-body.eng {
-
-	.kor {
-		display: none;
-	}
-}
-
 nav.navigation-bar {
 	position: fixed;
 	width: 100%;
@@ -277,8 +264,8 @@ section.main-header {
 				mask-size: 88vw;
 			}
 			@media (min-width: 1200px) {
-				-webkit-mask-size: 88vw;
-				mask-size: 88vw;
+				-webkit-mask-size: 75vw;
+				mask-size: 75vw;
 			}
 		}
 
@@ -332,6 +319,7 @@ section.main-header {
 
 				@media (min-width: 1200px) {
 					font-size: 47px;
+					color: #fff;
 				}
 			}
 		}
@@ -359,16 +347,17 @@ section.main-section-1 {
 	}
 	p.txt-main-1 {
 		font-family: 'tt-norms';
-		font-size: 20px;
+		font-size: 21px;
+		font-weight: 500;
 
 		@media (min-width: 1200px) { //pc
 			font-size: 27px;
 		}	
 	}
 	p.txt-main-2 {
-		font-size: 18px;
-		line-height: 24px;
-		padding: 20px 0 10px 0;
+		font-size: 17px;
+		line-height: 27px;
+		padding: 20px 0 20px 0;
 
 		@media (min-width: 1200px) { //pc
 			width: 70%;
@@ -379,11 +368,12 @@ section.main-section-1 {
 	a.experience-link {
 		font-family: 'tt-norms';
 		font-size: 17px;
+		font-weight: 300;
 		color: #000;
 		background: url('../img/icons/main_arrow_go.svg') 100% 50% no-repeat;
 		background-size: 24px auto;
 		padding: 10px 35px 10px 0;
-		line-height: 40px;
+		line-height: 24px;
 
 		@media (min-width: 1200px) { //pc
 			line-height: 70px;
@@ -441,6 +431,7 @@ section.main-section-2 {
 				left: 40px;
 				top: 40px;
 				font-size: 17px;
+				font-family: 'tt-norms';
 			}
 		}
 		div.card-txt-area {
@@ -609,6 +600,7 @@ section.brand-section {
 			p.title {
 				font-family: 'tt-norms';
 				font-size: 17px;
+				font-weight: 500;
 				color: #000;
 				padding-bottom: 15px;
 			}
@@ -622,7 +614,9 @@ section.brand-section {
 			line-height: 21px;
 
 			p.title {
+				font-family: 'tt-norms';
 				font-size: 17px;
+				font-weight: 500;
 				color: #000;
 				padding-bottom: 15px;
 			}
@@ -715,8 +709,9 @@ section.experience-section {
 
 	p.experience-title {
 		font-family: 'CrimsonPro-Regular';
-		font-size: 36px; 
-		line-height: 38px;
+		font-size: 26px; 
+		line-height: 36px;
+		padding-bottom: 30px;
 
 		@media (max-width: 1200px) { //mobile
 			&.mob {display: block;}
@@ -725,8 +720,8 @@ section.experience-section {
 		@media (min-width: 1200px) { //pc
 			&.mob {display: none;}
 			&.pcb {display: block;}
-			font-size: 70px; 
-		    line-height: 80px;
+			font-size: 46px; 
+		    line-height: 60px;
 		}
 	}
 
@@ -788,17 +783,22 @@ section.experience-section {
 						left: 50%;
 						bottom: 7%;
 						color: #fff; 
-						font-size: 12px;
+						font-size: 14px;
+						font-weight: 500;
 						text-align: left;
 						transform: translate(-50%, 0%);
 
+						@media (min-width: 1200px) { //pc
+
+						}
+
 						th {
 							padding: 5px 0;
-							width: 22%;
+							width: 25%;
 						}
 						td {
 							padding: 5px 0;
-							width: 78%;
+							width: 75%;
 						}
 					}
 				}
@@ -823,6 +823,7 @@ section.experience-section {
 					font-family: 'tt-norms';
 					font-size: 13px;
 					border-radius: 6px;
+					color: #5B5E63;
 				}
 			}
 		}
@@ -892,12 +893,13 @@ section.etc-section {
 			}
 		}
 		div.infos {
+			font-family: 'tt-norms';
 			font-size: 14px;
 			margin-top: 30px;
 
 			p.up {
 				color: #54575C;
-				padding-bottom: 10px;
+				padding-bottom: 5px;
 			}
 			p.down {
 
@@ -970,6 +972,7 @@ section.etc-section {
 					float: left;
 					width: 33.3%;
 					padding-right: 2.8%;
+					min-height: 140px;
 				}
 
 				&.f {
@@ -1046,6 +1049,15 @@ section.etc-section {
 			float: left;
 			width: 50%;
 			padding: 100px 7% 0 0;
+		}
+	}
+
+	div.privacy-term {
+		font-size: 15px;
+		line-height: 30px;
+
+		div.indent {
+			padding-left: 25px;
 		}
 	}
 }

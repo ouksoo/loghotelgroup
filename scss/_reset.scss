@@ -32,7 +32,20 @@
     font-display: swap;
     src: url('../img/font/TT_Norms_Pro_Regular.woff2') format('woff2');
 }
-
+@font-face {
+    font-family: 'tt-norms';
+    font-weight: 500;
+    font-style: medium;
+    font-display: swap;
+    src: url('../img/font/TT_Norms_Pro_Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'tt-norms';
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+    src: url('../img/font/TT_Norms_Pro_Bold.woff2') format('woff2');
+}
 @font-face {
     font-family: 'CrimsonPro-Regular';
     font-weight: 300;
@@ -46,6 +59,31 @@
 html, body {
 	margin:0; padding:0; font-family: 'Apple SD Gothic Neo', sans-serif;
 	overscroll-behavior: none;
+	font-weight: 300;
+}
+
+.lang-ko {
+	font-family: 'Apple SD Gothic Neo', sans-serif !important;
+}
+.lang-en {
+	font-family: 'tt-norms' !important;
+}
+
+body.kor {
+
+	span.eng {
+		display: none;
+	}
+}
+body.eng {
+
+	span.kor {
+		display: none;
+	}
+}
+
+.kor-font {
+	font-family: 'Apple SD Gothic Neo', sans-serif;
 }
 
 .clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden; } .clearfix { display:inline-block; }/*  ie-mac \*/ *html .clearfix {height: 1%;} .clearfix {display: block;}/* ie-mac */

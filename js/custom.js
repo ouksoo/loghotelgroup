@@ -70,8 +70,8 @@ var LOG = {
 		const videoWrapper = document.querySelector('.video-wrapper');
 
 		if($(window).width() > 1200) {
-			baseSize = 88;
-			minSize = 88; 
+			baseSize = 75;
+			minSize = 75; 
 		}
 		else {
 			baseSize = 88;
@@ -79,8 +79,8 @@ var LOG = {
 		}
 		window.addEventListener('resize', () => {
 			if($(window).width() > 1200) {
-				baseSize = 88;
-				minSize = 88; 
+				baseSize = 75;
+				minSize = 75; 
 			}
 			else {
 				baseSize = 88;
@@ -226,7 +226,7 @@ var LOG = {
 		});
 	},
 	globalLinkStart : function() {
-		//var url = "https://ouksoo77.mycafe24.com/log/";    
+		//var url = "https://ouksoo77.mycafe24.com/log2/";    
 		var url = "http://127.0.0.1:5500/";
 
 		$('.link-logo').on('click', function() {
@@ -245,10 +245,10 @@ var LOG = {
 			$(location).attr('href',url + "contact.html");
 		});
 		$('.link-privacy').on('click', function() {
-			
+			$(location).attr('href',url + "privacy_policy.html");
 		});
 		$('.link-terms').on('click', function() {
-			
+			$(location).attr('href',url + "terms_and_conditions.html");
 		});
 	},
 }

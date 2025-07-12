@@ -30,6 +30,20 @@
   src: url("../img/font/TT_Norms_Pro_Regular.woff2") format("woff2");
 }
 @font-face {
+  font-family: "tt-norms";
+  font-weight: 500;
+  font-style: medium;
+  font-display: swap;
+  src: url("../img/font/TT_Norms_Pro_Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "tt-norms";
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+  src: url("../img/font/TT_Norms_Pro_Bold.woff2") format("woff2");
+}
+@font-face {
   font-family: "CrimsonPro-Regular";
   font-weight: 300;
   font-style: normal;
@@ -45,6 +59,27 @@ html, body {
   padding: 0;
   font-family: "Apple SD Gothic Neo", sans-serif;
   overscroll-behavior: none;
+  font-weight: 300;
+}
+
+.lang-ko {
+  font-family: "Apple SD Gothic Neo", sans-serif !important;
+}
+
+.lang-en {
+  font-family: "tt-norms" !important;
+}
+
+body.kor span.eng {
+  display: none;
+}
+
+body.eng span.kor {
+  display: none;
+}
+
+.kor-font {
+  font-family: "Apple SD Gothic Neo", sans-serif;
 }
 
 .clearfix:after {
@@ -189,14 +224,6 @@ strong, b {
 
 body.sub-bgcolor {
   background-color: #E6E6E6;
-}
-
-body.kor .eng {
-  display: none;
-}
-
-body.eng .kor {
-  display: none;
 }
 
 nav.navigation-bar {
@@ -431,8 +458,8 @@ section.main-header div.video-intro div.media video {
 }
 @media (min-width: 1200px) {
   section.main-header div.video-intro div.media {
-    -webkit-mask-size: 88vw;
-    mask-size: 88vw;
+    -webkit-mask-size: 75vw;
+    mask-size: 75vw;
   }
 }
 section.main-header div.video-intro div.bottom {
@@ -485,6 +512,7 @@ section.main-header div.video-intro div.bottom p.txt-main-bottom {
 @media (min-width: 1200px) {
   section.main-header div.video-intro div.bottom p.txt-main-bottom {
     font-size: 47px;
+    color: #fff;
   }
 }
 section.main-header div.text-intro {
@@ -509,7 +537,8 @@ section.main-section-1 #main-our-brand-link {
 }
 section.main-section-1 p.txt-main-1 {
   font-family: "tt-norms";
-  font-size: 20px;
+  font-size: 21px;
+  font-weight: 500;
 }
 @media (min-width: 1200px) {
   section.main-section-1 p.txt-main-1 {
@@ -517,9 +546,9 @@ section.main-section-1 p.txt-main-1 {
   }
 }
 section.main-section-1 p.txt-main-2 {
-  font-size: 18px;
-  line-height: 24px;
-  padding: 20px 0 10px 0;
+  font-size: 17px;
+  line-height: 27px;
+  padding: 20px 0 20px 0;
 }
 @media (min-width: 1200px) {
   section.main-section-1 p.txt-main-2 {
@@ -531,11 +560,12 @@ section.main-section-1 p.txt-main-2 {
 section.main-section-1 a.experience-link {
   font-family: "tt-norms";
   font-size: 17px;
+  font-weight: 300;
   color: #000;
   background: url("../img/icons/main_arrow_go.svg") 100% 50% no-repeat;
   background-size: 24px auto;
   padding: 10px 35px 10px 0;
-  line-height: 40px;
+  line-height: 24px;
 }
 @media (min-width: 1200px) {
   section.main-section-1 a.experience-link {
@@ -602,6 +632,7 @@ section.main-section-2 div.main-card-section1 p.card-txt-1 {
     left: 40px;
     top: 40px;
     font-size: 17px;
+    font-family: "tt-norms";
   }
 }
 section.main-section-2 div.main-card-section1 div.card-txt-area {
@@ -775,6 +806,7 @@ section.brand-section div.brand-info-wrapper div.brand-detail {
 section.brand-section div.brand-info-wrapper div.brand-detail p.title {
   font-family: "tt-norms";
   font-size: 17px;
+  font-weight: 500;
   color: #000;
   padding-bottom: 15px;
 }
@@ -787,7 +819,9 @@ section.brand-section div.brand-info-wrapper div.brand-property {
   line-height: 21px;
 }
 section.brand-section div.brand-info-wrapper div.brand-property p.title {
+  font-family: "tt-norms";
   font-size: 17px;
+  font-weight: 500;
   color: #000;
   padding-bottom: 15px;
 }
@@ -871,8 +905,9 @@ section.experience-section {
 }
 section.experience-section p.experience-title {
   font-family: "CrimsonPro-Regular";
-  font-size: 36px;
-  line-height: 38px;
+  font-size: 26px;
+  line-height: 36px;
+  padding-bottom: 30px;
 }
 @media (max-width: 1200px) {
   section.experience-section p.experience-title.mob {
@@ -884,8 +919,8 @@ section.experience-section p.experience-title {
 }
 @media (min-width: 1200px) {
   section.experience-section p.experience-title {
-    font-size: 70px;
-    line-height: 80px;
+    font-size: 46px;
+    line-height: 60px;
   }
   section.experience-section p.experience-title.mob {
     display: none;
@@ -949,17 +984,18 @@ section.experience-section div.experience-list div.inner div.image div.info-deta
   left: 50%;
   bottom: 7%;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 500;
   text-align: left;
   transform: translate(-50%, 0%);
 }
 section.experience-section div.experience-list div.inner div.image div.info-detail table th {
   padding: 5px 0;
-  width: 22%;
+  width: 25%;
 }
 section.experience-section div.experience-list div.inner div.image div.info-detail table td {
   padding: 5px 0;
-  width: 78%;
+  width: 75%;
 }
 section.experience-section div.experience-list div.inner div.image img {
   width: 100%;
@@ -980,6 +1016,7 @@ section.experience-section div.experience-list div.inner div.category-wrap span.
   font-family: "tt-norms";
   font-size: 13px;
   border-radius: 6px;
+  color: #5B5E63;
 }
 
 section.etc-section {
@@ -1045,12 +1082,13 @@ section.etc-section div.contact-wrapper p.etc-text {
   }
 }
 section.etc-section div.contact-wrapper div.infos {
+  font-family: "tt-norms";
   font-size: 14px;
   margin-top: 30px;
 }
 section.etc-section div.contact-wrapper div.infos p.up {
   color: #54575C;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 @media (min-width: 1200px) {
   section.etc-section div.company-wrapper {
@@ -1112,6 +1150,7 @@ section.etc-section div.our-service div.services div.sec {
     float: left;
     width: 33.3%;
     padding-right: 2.8%;
+    min-height: 140px;
   }
 }
 section.etc-section div.our-service div.services div.sec.f {
@@ -1181,6 +1220,13 @@ section.etc-section div.our-team {
     width: 50%;
     padding: 100px 7% 0 0;
   }
+}
+section.etc-section div.privacy-term {
+  font-size: 15px;
+  line-height: 30px;
+}
+section.etc-section div.privacy-term div.indent {
+  padding-left: 25px;
 }
 
 h2.h2-title {
@@ -1386,7 +1432,7 @@ section.main-section-2 .swiper-slide-active {
 @media (min-width: 1200px) {
   .custom-select-wrapper .custom-select {
     width: 330px;
-    margin: 90px 0 0 0;
+    margin: 50px 0 0 0;
   }
 }
 .custom-select-wrapper .custom-options {
