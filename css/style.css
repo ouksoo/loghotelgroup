@@ -826,7 +826,9 @@ section.brand-section div.brand-info-wrapper div.brand-property p.title {
   padding-bottom: 15px;
 }
 section.brand-section div.brand-info-wrapper div.brand-property ul.property-list li {
+  font-family: "tt-norms";
   font-size: 13px;
+  font-weight: 400;
   padding: 2px 0 2px 13px;
   background: url("../img/icons/icon_property_round.svg") 0% 50% no-repeat;
   background-size: 4px auto;
@@ -990,10 +992,12 @@ section.experience-section div.experience-list div.inner div.image div.info-deta
   transform: translate(-50%, 0%);
 }
 section.experience-section div.experience-list div.inner div.image div.info-detail table th {
+  font-family: "tt-norms";
   padding: 5px 0;
   width: 25%;
 }
 section.experience-section div.experience-list div.inner div.image div.info-detail table td {
+  font-family: "tt-norms";
   padding: 5px 0;
   width: 75%;
 }

@@ -623,7 +623,9 @@ section.brand-section {
 			ul.property-list {
 
 				li {
+					font-family: 'tt-norms';
 					font-size: 13px;
+					font-weight: 400;
 					padding: 2px 0 2px 13px;
 					background: url('../img/icons/icon_property_round.svg') 0% 50% no-repeat;
 					background-size: 4px auto;
@@ -793,10 +795,12 @@ section.experience-section {
 						}
 
 						th {
+							font-family: 'tt-norms';
 							padding: 5px 0;
 							width: 25%;
 						}
 						td {
+							font-family: 'tt-norms';
 							padding: 5px 0;
 							width: 75%;
 						}
